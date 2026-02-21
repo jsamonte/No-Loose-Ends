@@ -1,5 +1,36 @@
 ~ start
 	"So, if you were to kill someone, would you get caught?"
 	"Nah, I'd get away with it"
+	
+	Select assasination tool
+	-Lab equipment 
+		do Globals.assasinationTool = "Lab equipment"
+	-Gun shot
+		do Globals.assasinationTool = "Gun shot"
+	-Stab wounds
+		do Globals.assasinationTool = "Stab wounds"
+	-Poison
+		do Globals.assasinationTool = "Poison"
+		
+	Select person to frame
+	-Lab assistant
+		do Globals.personSuspected = "Lab assistant"
+		
+	-Security guard
+		do Globals.personSuspected = "Security guard"
+	-Homeless person
+		do Globals.personSuspected = "Homeless person"
+	-Janitor
+		do Globals.personSuspected = "Janitor"
 => END
 
+~ labAssistant
+	Choose one
+	-You: What is your relation to the Dr. Ash Renee?
+		Assistant: He was a mentor of mine. He was really bossy, but I am sure he had good intentions!
+	-	=> labAssistant
+	You: What were you doing the night the Doctor died?
+		Assistant: I was walking the dog
+		=> labAssistant
+	-You: 3 options
+		
