@@ -1,7 +1,7 @@
 extends Control
 
 #Load dialogue file
-const Dialogue_File = preload("res://labAssistant.dialogue")
+const Dialogue_File = preload("res://securityGuard.dialogue")
 
 #Define DialogueLabel and ChoicesContainer as variables when scene finbishes loading
 @onready var dialogue_label = $DialogueLabel
@@ -10,7 +10,7 @@ const Dialogue_File = preload("res://labAssistant.dialogue")
 var current_dialogue_line
 
 func _ready():
-	start_dialogue("labAssistant")
+	start_dialogue("securityGuard")
 	
 func start_dialogue(dialogueFunc: String):
 	#Retrieve next line in dialogue file (DialogueLine object, contains text and responses array)
