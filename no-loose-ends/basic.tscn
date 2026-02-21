@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cw335a57oqrlm"]
+
+[ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="1_ksa12"]
+[ext_resource type="PackedScene" uid="uid://nqiyqnx42m61" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_fullglove_physics_hand.tscn" id="2_d8mpy"]
+[ext_resource type="PackedScene" uid="uid://cigx2gnf4tg4d" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_fullglove_physics_hand.tscn" id="3_ehqhh"]
+[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="4_5aski"]
+[ext_resource type="Script" uid="uid://eavk7267igp7" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.gd" id="5_d8mpy"]
+
+[node name="Node3D" type="Node3D" unique_id=1790925141]
+
+[node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=875051348]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D" unique_id=396536274]
+
+[node name="LeftHandXRController3D" type="XRController3D" parent="XROrigin3D" unique_id=1223899391]
+tracker = &"left_hand"
+
+[node name="FunctionPointer" parent="XROrigin3D/LeftHandXRController3D" unique_id=1584785644 instance=ExtResource("1_ksa12")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02, 0.05, -0.1)
+
+[node name="LeftPhysicsHand" parent="XROrigin3D/LeftHandXRController3D" unique_id=1630793876 instance=ExtResource("2_d8mpy")]
+transform = Transform3D(-0.015218668, 0.9998842, 0, -0.9998842, -0.015218668, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="RightHandXRController3D" type="XRController3D" parent="XROrigin3D" unique_id=1831618891]
+tracker = &"right_hand"
+
+[node name="FunctionPointer" parent="XROrigin3D/RightHandXRController3D" unique_id=1263878476 instance=ExtResource("1_ksa12")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02, 0.05, -0.1)
+
+[node name="RightPhysicsHand" parent="XROrigin3D/RightHandXRController3D" unique_id=1562078344 instance=ExtResource("3_ehqhh")]
+transform = Transform3D(0.01563755, -0.99987775, 0, 0.99987775, 0.01563755, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="StartXR" parent="." unique_id=648770852 instance=ExtResource("4_5aski")]
+
+[node name="XRToolsViewport2DIn3D" type="Node3D" parent="." unique_id=181810497]
+script = ExtResource("5_d8mpy")
+transparent = 1
+alpha_scissor_threshold = 0.25
+unshaded = false
+filter = true
+scene_properties_keys = PackedStringArray()
+metadata/_custom_type_script = "uid://eavk7267igp7"

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://shbobkyreym7"]
+
+[node name="Node2D" type="Node2D" unique_id=1605353438]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=64465170]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1551159719]
+
+[node name="Camera2D" type="Camera2D" parent="SubViewportContainer/SubViewport" unique_id=1058904789]
