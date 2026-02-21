@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dxdpldtjbv3"]
 
-[ext_resource type="PackedScene" uid="uid://ddjaknd6v0lri" path="res://3DModels/BodyBaseV2.glb" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://ddjaknd6v0lri" path="res://3DModels/LabAssitant.glb" id="1_a202f"]
 
 [node name="Node3D" type="Node3D" unique_id=691127696]
 
