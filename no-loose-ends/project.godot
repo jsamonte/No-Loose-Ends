@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="No Loose Ends"
+run/main_scene="uid://cw335a57oqrlm"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
