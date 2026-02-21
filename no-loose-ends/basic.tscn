@@ -41,7 +41,7 @@ hand_material_override = ExtResource("3_5aski")
 enable_passthrough = true
 
 [node name="Viewport2Din3D" parent="." unique_id=718221118 instance=ExtResource("5_ehqhh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, -1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, -1.5)
 scene = ExtResource("6_ehqhh")
 transparent = 1
 filter = false
