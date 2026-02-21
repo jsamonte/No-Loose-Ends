@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="No Loose Ends"
-run/main_scene="uid://cw335a57oqrlm"
+run/main_scene="uid://h2w246pp424l"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -20,7 +20,6 @@ config/icon="res://icon.svg"
 DialogueManager="*uid://c3rodes2l3gxb"
 XRToolsUserSettings="*uid://bqgb8i74tm0t"
 XRToolsRumbleManager="*uid://by853dk86g1qw"
-globals="*uid://cpf7s0k8jhkq0"
 globalVariables="*uid://bi537w8voh4ew"
 
 [dialogue_manager]
@@ -37,9 +36,15 @@ window/vsync/vsync_mode=0
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg")
 
+[filesystem]
+
+import/blender/enabled=false
+
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://startingDialogue.dialogue", "res://labAssistant.dialogue")
+locale/translations_pot_files=PackedStringArray("res://DialogueFiles/startingDialogue.dialogue", "res://DialogueFiles/securityGuardInterrogation.dialogue", "res://DialogueFiles/labAssistantInterrogation.dialogue", "res://DialogueFiles/janitorInterrogation.dialogue", "res://DialogueFiles/homelessPersonInterrogation.dialogue", "res://DialogueFiles/labAssistantInterrogation2.dialogue", "res://DialogueFiles/securityGuardInterrogation2.dialogue", "res://DialogueFiles/homelessPersonInterrogation2.dialogue", "res://DialogueFiles/janitorInterrogation2.dialogue")
+<<<<<<<Updatedupstreamlocale/translations_pot_files=PackedStringArray("res://DialogueFiles/labAssistant.dialogue", "res://DialogueFiles/securityGuard.dialogue", "res://DialogueFiles/startingDialogue.dialogue", "res://DialogueFiles/homelessPerson.dialogue", "res://DialogueFiles/janitor.dialogue", "res://homelessPerson.dialogue", "res://labAssistant.dialogue", "res://securityGuard.dialogue", "res://startingDialogue.dialogue")
+<<<<<<<Updatedupstream<<<<<<<Updatedupstreamlocale/translations_pot_files=PackedStringArray("res://DialogueFiles/labAssistant.dialogue", "res://DialogueFiles/securityGuard.dialogue", "res://DialogueFiles/startingDialogue.dialogue", "res://DialogueFiles/homelessPerson.dialogue", "res://DialogueFiles/janitor.dialogue", "res://homelessPerson.dialogue", "res://labAssistant.dialogue", "res://securityGuard.dialogue", "res://startingDialogue.dialogue")
 
 [physics]
 

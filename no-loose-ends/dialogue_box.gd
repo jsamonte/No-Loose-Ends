@@ -1,16 +1,16 @@
 extends Control
 
 #Load dialogue file
-const Dialogue_File = preload("res://startingDialogue.dialogue")
+const Dialogue_File = preload("res://DialogueFiles/startingDialogue.dialogue")
 
 #Define DialogueLabel and ChoicesContainer as variables when scene finbishes loading
-@onready var dialogue_label = $DialogueLabel
-@onready var choices_container = $ChoicesContainer
+@onready var dialogue_label = $Panel/MarginContainer/VBoxContainer/DialogueLabel
+@onready var choices_container = $Panel/MarginContainer/VBoxContainer/ChoicesContainer
 
 var current_dialogue_line
 
 func _ready():
-	start_dialogue("start")
+	start_dialogue(globalVariables.nextDialogueName)
 	
 func start_dialogue(dialogueFunc: String):
 	#Retrieve next line in dialogue file (DialogueLine object, contains text and responses array)
@@ -21,12 +21,12 @@ func start_dialogue(dialogueFunc: String):
 func show_dialogue():
 	#If reached end of dialogue file
 	if current_dialogue_line == null:
-		dialogue_label.text = "Conversation ended"
+		dialogue_label.text = "The End"
 		clear_choices()
 		return
 		
 	#Set current dialogue line
-	dialogue_label.text = "[center]" + current_dialogue_line.text + "[/center]"
+	dialogue_label.text = current_dialogue_line.text
 	
 	#Clear any previous choices
 	clear_choices()
@@ -37,6 +37,7 @@ func show_dialogue():
 		for response in current_dialogue_line.responses:
 			#Creates button to hold choice
 			var button = Button.new()
+			button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 			button.text = response.text
 			button.add_theme_font_size_override("font_size", 24)
 			#If button is pressed, run the on_choice_pressed() function

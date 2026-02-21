@@ -1,0 +1,122 @@
+import "res://DialogueFiles/labAssistantInterrogation.dialogue" as labAssistantSnippet
+import "res://DialogueFiles/securityGuardInterrogation.dialogue" as securityGuardSnippet
+import "res://DialogueFiles/homelessPersonInterrogation.dialogue" as homelessPersonSnippet
+import "res://DialogueFiles/janitorInterrogation.dialogue" as janitorSnippet
+
+import "res://DialogueFiles/labAssistantInterrogation2.dialogue" as labAssistantSnippet2
+import "res://DialogueFiles/securityGuardInterrogation2.dialogue" as securityGuardSnippet2
+import "res://DialogueFiles/homelessPersonInterrogation2.dialogue" as homelessPersonSnippet2
+import "res://DialogueFiles/janitorInterrogation2.dialogue" as janitorSnippet2
+
+~ start
+"So, if you were to kill someone, would you get caught?" 
+"Nah, I'd get away with it"
+
+Select assasination tool
+- Lab equipment
+	set globalVariables.assasinationTool = "Lab equipment"
+- Gun shot
+	set globalVariables.assasinationTool = "Gun shot"
+- Stab wounds 
+	set globalVariables.assasinationTool = "Stab wounds"
+- Poison
+	set globalVariables.assasinationTool = "Poison"
+set globalVariables.nextDialogueName = "labAssistantInterrogation"
+do change_to_lab_assistant()
+=> END
+
+~ labAssistantInterrogation
+--Lab assistant interrogation--
+=>< labAssistantSnippet/labAssistant
+set globalVariables.nextDialogueName = "securityGuardInterrogation"
+do change_to_security_guard()
+=> END
+
+~ securityGuardInterrogation
+--Security guard interrogation--
+=>< securityGuardSnippet/securityGuard
+set globalVariables.nextDialogueName = "homelessPersonInterrogation"
+do change_to_homeless_person()
+=> END
+
+~ homelessPersonInterrogation
+--Homeless person interrogation--
+=>< homelessPersonSnippet/homelessPerson
+set globalVariables.nextDialogueName = "janitorInterrogation"
+do change_to_janitor()
+=> END
+
+~ janitorInterrogation
+--Janitor interrogation--
+=>< janitorSnippet/janitor
+
+Select person to frame
+- Lab assistant
+	set globalVariables.personSuspected = "Lab assistant"
+	set globalVariables.nextDialogueName = "labAssistantInterrogation2"
+	do change_to_lab_assistant()
+- Security guard
+	set globalVariables.personSuspected = "Security guard"
+	set globalVariables.nextDialogueName = "securityGuardInterrogation2"
+	do change_to_security_guard()
+- Homeless person
+	set globalVariables.personSuspected = "Homeless person"
+	set globalVariables.nextDialogueName = "homelessPersonInterrogation2"
+	do change_to_homeless_person()
+- Janitor
+	set globalVariables.personSuspected = "Janitor"
+	set globalVariables.nextDialogueName = "janitorInterrogation2"
+	do change_to_janitor()
+=> END
+
+~ labAssistantInterrogation2
+=>< labAssistantSnippet2/labAssistant_Interrogation2
+set globalVariables.nextDialogueName = "result"
+do load_outro_scene()
+=> END
+
+~ securityGuardInterrogation2
+=>< securityGuardSnippet2/securityGuard_Interrogation2
+set globalVariables.nextDialogueName = "result"
+do load_outro_scene()
+=> END
+
+~ homelessPersonInterrogation2
+=>< homelessPersonSnippet2/homelessPerson_Interrogation2
+set globalVariables.nextDialogueName = "result"
+do load_outro_scene()
+=> END
+
+~ janitorInterrogation2
+=>< janitorSnippet2/janitor_Interrogation2
+set globalVariables.nextDialogueName = "result"
+do load_outro_scene()
+=> END
+
+~ result
+if globalVariables.gotAwayWithIt == true
+	You got away with it
+	- Play again?
+		=>< playAgain
+	- End?
+		=>< endScene
+if globalVariables.justiceServed == true
+	Justice is served
+	- Play again?
+		=>< playAgain
+	- End?
+		=>< endScene
+=> END
+
+~ playAgain
+set globalVariables.personSuspected = "" 
+set globalVariables.assasinationTool = "" 
+set globalVariables.nextDialogueName = "start"
+set globalVariables.gotAwayWithIt = false
+set globalVariables.justiceServed = false
+do load_intro_scene()
+=> END
+
+~ endScene
+Total number of wins\: {{globalVariables.wins}}.
+=> END

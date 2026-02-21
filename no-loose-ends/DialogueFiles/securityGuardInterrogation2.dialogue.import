@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bh6gs0sqldxn4"
+path="res://.godot/imported/securityGuardInterrogation2.dialogue-8ecb894516beb89ee95c1639d7403956.tres"
+
+[deps]
+
+source_file="res://DialogueFiles/securityGuardInterrogation2.dialogue"
+dest_files=["res://.godot/imported/securityGuardInterrogation2.dialogue-8ecb894516beb89ee95c1639d7403956.tres"]
+
+[params]
+
+defaults=true
