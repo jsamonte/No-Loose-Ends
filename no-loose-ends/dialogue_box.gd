@@ -4,8 +4,8 @@ extends Control
 const Dialogue_File = preload("res://labAssistant.dialogue")
 
 #Define DialogueLabel and ChoicesContainer as variables when scene finbishes loading
-@onready var dialogue_label = $DialogueLabel
-@onready var choices_container = $ChoicesContainer
+@onready var dialogue_label = $Panel/MarginContainer/VBoxContainer/DialogueLabel
+@onready var choices_container = $Panel/MarginContainer/VBoxContainer/ChoicesContainer
 
 var current_dialogue_line
 
