@@ -10,16 +10,7 @@ const Dialogue_File = preload("res://DialogueFiles/startingDialogue.dialogue")
 var current_dialogue_line
 
 func _ready():
-	if globalVariables.personSuspected == "Lab assistant":
-		start_dialogue("labAssistant")
-	elif globalVariables.personSuspected == "Security guard":
-		start_dialogue("securityGuard")
-	elif globalVariables.personSuspected == "Homeless person":
-		start_dialogue("homelessPerson")
-	elif globalVariables.personSuspected == "Janitor":
-		start_dialogue("janitor")
-	else:
-		start_dialogue("start")
+	start_dialogue("start")
 	
 func start_dialogue(dialogueFunc: String):
 	#Retrieve next line in dialogue file (DialogueLine object, contains text and responses array)

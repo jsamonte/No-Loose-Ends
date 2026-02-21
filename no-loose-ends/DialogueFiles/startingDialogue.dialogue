@@ -6,7 +6,7 @@ import "res://DialogueFiles/janitorInterrogation.dialogue" as janitorSnippet
 ~ start
 "So, if you were to kill someone, would you get caught?"
 "Nah, I'd get away with it"
-	
+
 Select assasination tool
 - Lab equipment
 	set globalVariables.assasinationTool = "Lab equipment"
@@ -17,9 +17,11 @@ Select assasination tool
 - Poison
 	set globalVariables.assasinationTool = "Poison"
 
+do change_to_lab_assistant()
 --Lab assistant interrogation--
 =>< labAssistantSnippet/labAssistant
 
+do change_to_security_guard()
 --Security guard interrogation--
 =>< securityGuardSnippet/securityGuard
 
@@ -29,19 +31,21 @@ Select assasination tool
 --Janitor interrogation--
 =>< janitorSnippet/janitor
 
+
 Select person to frame
 - Lab assistant
 	set globalVariables.personSuspected = "Lab assistant"
-#	=> labAssistant winOrLose
+	#	=> labAssistant interrogation2
 - Security guard
 	set globalVariables.personSuspected = "Security guard"
-#	=> securityGuard winOrLose
+#	=> securityGuard interrogation2
 - Homeless person
 	set globalVariables.personSuspected = "Homeless person"
-#	=> homelessPerson winOrLose
+#	=> homelessPerson interrogation2
 - Janitor
 	set globalVariables.personSuspected = "Janitor"
-#	=> janitor winOrLose
+#	=> janitor interrogation2
 => END
+
 
 
