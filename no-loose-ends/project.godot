@@ -20,7 +20,6 @@ config/icon="res://icon.svg"
 DialogueManager="*uid://c3rodes2l3gxb"
 XRToolsUserSettings="*uid://bqgb8i74tm0t"
 XRToolsRumbleManager="*uid://by853dk86g1qw"
-globals="*uid://cpf7s0k8jhkq0"
 globalVariables="*uid://bi537w8voh4ew"
 
 [dialogue_manager]
