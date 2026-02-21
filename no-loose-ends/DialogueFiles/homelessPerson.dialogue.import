@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ciurie7a4758i"
+path="res://.godot/imported/homelessPerson.dialogue-796f2d47b5da0728c8c0c64a76deeaa6.tres"
+
+[deps]
+
+source_file="res://DialogueFiles/homelessPerson.dialogue"
+dest_files=["res://.godot/imported/homelessPerson.dialogue-796f2d47b5da0728c8c0c64a76deeaa6.tres"]
+
+[params]
+
+defaults=true

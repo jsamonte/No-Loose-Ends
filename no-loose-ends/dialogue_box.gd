@@ -1,16 +1,25 @@
 extends Control
 
 #Load dialogue file
-const Dialogue_File = preload("res://labAssistant.dialogue")
+const Dialogue_File = preload("res://DialogueFiles/startingDialogue.dialogue")
 
 #Define DialogueLabel and ChoicesContainer as variables when scene finbishes loading
-@onready var dialogue_label = $DialogueLabel
-@onready var choices_container = $ChoicesContainer
+@onready var dialogue_label = $Panel/MarginContainer/VBoxContainer/DialogueLabel
+@onready var choices_container = $Panel/MarginContainer/VBoxContainer/ChoicesContainer
 
 var current_dialogue_line
 
 func _ready():
-	start_dialogue("labAssistant")
+	if globalVariables.personSuspected == "Lab assistant":
+		start_dialogue("labAssistant")
+	elif globalVariables.personSuspected == "Security guard":
+		start_dialogue("securityGuard")
+	elif globalVariables.personSuspected == "Homeless person":
+		start_dialogue("homelessPerson")
+	elif globalVariables.personSuspected == "Janitor":
+		start_dialogue("janitor")
+	else:
+		start_dialogue("start")
 	
 func start_dialogue(dialogueFunc: String):
 	#Retrieve next line in dialogue file (DialogueLine object, contains text and responses array)
