@@ -54,3 +54,6 @@ autoplay = true
 
 [node name="LabAssitant" parent="." unique_id=771511862 instance=ExtResource("9_cuoxv")]
 transform = Transform3D(-0.4, 0, -6.039832e-08, 0, 0.4, 0, 6.039832e-08, 0, -0.4, 0, -2.5, -3.654)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1176344002]
+transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
