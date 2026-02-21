@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="5_ehqhh"]
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="6_ehqhh"]
 [ext_resource type="AudioStream" uid="uid://dhvo281bty3kx" path="res://Music/MusicForTest/Aquarium Draft 4.wav" id="8_7v3jb"]
+[ext_resource type="PackedScene" uid="uid://u8g8kw16wi5a" path="res://3DModels/BodyBase.blend" id="9_cuoxv"]
 
 [node name="Node3D" type="Node3D" unique_id=1790925141]
 
@@ -40,7 +41,7 @@ hand_material_override = ExtResource("3_5aski")
 enable_passthrough = true
 
 [node name="Viewport2Din3D" parent="." unique_id=718221118 instance=ExtResource("5_ehqhh")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.75, -1.5)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.5, 0.75, -1.5)
 scene = ExtResource("6_ehqhh")
 transparent = 1
 filter = false
@@ -49,3 +50,6 @@ scene_properties_keys = PackedStringArray()
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1388074811]
 stream = ExtResource("8_7v3jb")
 autoplay = true
+
+[node name="BodyBase" parent="." unique_id=329020464 instance=ExtResource("9_cuoxv")]
+transform = Transform3D(-0.25, 0, -2.1855694e-08, 0, 0.25, 0, 2.1855694e-08, 0, -0.25, 0, -0.7907204, -2)

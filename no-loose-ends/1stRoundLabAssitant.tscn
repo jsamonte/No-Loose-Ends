@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cpsb1p3phtvf7"]
+
+[ext_resource type="PackedScene" uid="uid://u8g8kw16wi5a" path="res://3DModels/BodyBase.blend" id="1_mykd8"]
+
+[node name="Node3D" type="Node3D" unique_id=552728968]
+
+[node name="BodyBase" parent="." unique_id=329020464 instance=ExtResource("1_mykd8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33954346, 0, 0.9084289)
