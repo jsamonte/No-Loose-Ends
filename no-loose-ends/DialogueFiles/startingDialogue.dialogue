@@ -16,36 +16,62 @@ Select assasination tool
 	set globalVariables.assasinationTool = "Stab wounds"
 - Poison
 	set globalVariables.assasinationTool = "Poison"
+set globalVariables.nextDialogueName = "labAssistantInterrogation"
+do change_to_lab_assistant()
+=> END
 
-#do change_to_lab_assistant()
+~ labAssistantInterrogation
 --Lab assistant interrogation--
 =>< labAssistantSnippet/labAssistant
-
+set globalVariables.nextDialogueName = "securityGuardInterrogation"
 do change_to_security_guard()
+=> END
+
+~ securityGuardInterrogation
 --Security guard interrogation--
 =>< securityGuardSnippet/securityGuard
+set globalVariables.nextDialogueName = "homelessPersonInterrogation"
+do change_to_homeless_person()
+=> END
 
+~ homelessPersonInterrogation
 --Homeless person interrogation
 =>< homelessPersonSnippet/homelessPerson
+set globalVariables.nextDialogueName = "janitorInterrogation"
+do change_to_janitor()
+=> END
 
+~ janitorInterrogation
 --Janitor interrogation--
 =>< janitorSnippet/janitor
-
 
 Select person to frame
 - Lab assistant
 	set globalVariables.personSuspected = "Lab assistant"
-	#	=> labAssistant interrogation2
+	set globalVariables.nextDialogueName = "labAssistantInterrogation2"
+	do change_to_lab_assistant()
 - Security guard
 	set globalVariables.personSuspected = "Security guard"
-#	=> securityGuard interrogation2
+	set globalVariables.nextDialogueName = "securityGuardInterrogation2"
+	do change_to_security_guard()
 - Homeless person
 	set globalVariables.personSuspected = "Homeless person"
-#	=> homelessPerson interrogation2
+	set globalVariables.nextDialogueName = "homelessPersonInterrogation2"
+	do change_to_homeless_person()
 - Janitor
 	set globalVariables.personSuspected = "Janitor"
-#	=> janitor interrogation2
+	set globalVariables.nextDialogueName = "janitorInterrogation2"
+	do change_to_janitor()
 => END
 
+~ labAssistantInterrogation2
+=> END
 
+~ securityGuardInterrogation2
+=> END
 
+~ homelessPersonInterrogation2
+=> END
+
+~ janitorInterrogation2
+=> END
