@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://shbobkyreym7"]
 
+[ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/dialogue_label.gd" id="1_np7v8"]
+[ext_resource type="Script" uid="uid://bcosjag8j686d" path="res://dialogue_box.gd" id="1_plhv7"]
+
 [node name="Node2D" type="Node2D" unique_id=1605353438]
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=64465170]
@@ -7,5 +10,40 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1551159719]
+handle_input_locally = false
+render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="SubViewportContainer/SubViewport" unique_id=1058904789]
+
+[node name="DialogueBox" type="Control" parent="SubViewportContainer/SubViewport" unique_id=1469010727]
+layout_mode = 3
+anchor_right = 0.98200005
+anchor_bottom = 0.95300007
+offset_right = 0.2159729
+offset_bottom = 0.063964844
+script = ExtResource("1_plhv7")
+
+[node name="DialogueLabel" type="RichTextLabel" parent="SubViewportContainer/SubViewport/DialogueBox" unique_id=357882694]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.994
+anchor_bottom = 0.551
+offset_right = 0.018005371
+offset_bottom = 0.11199951
+script = ExtResource("1_np7v8")
+skip_pause_at_abbreviations = PackedStringArray("Mr", "Mrs", "Ms", "Dr", "etc", "eg", "ex")
+metadata/_custom_type_script = "uid://g32um0mltv5d"
+
+[node name="ChoicesContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/DialogueBox" unique_id=166889462]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.002
+anchor_top = 0.50200003
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.006000042
+offset_top = 0.023986816
+offset_right = 2.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
