@@ -45,6 +45,8 @@ transparent = 1
 filter = false
 scene_properties_keys = PackedStringArray()
 
+[node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("6_umtmr")]
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2129480650]
 stream = ExtResource("7_ko2am")
 autoplay = true

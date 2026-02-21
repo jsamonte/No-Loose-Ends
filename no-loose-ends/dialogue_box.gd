@@ -10,7 +10,7 @@ const Dialogue_File = preload("res://DialogueFiles/startingDialogue.dialogue")
 var current_dialogue_line
 
 func _ready():
-	start_dialogue("start")
+	start_dialogue(globalVariables.nextDialogueName)
 	
 func start_dialogue(dialogueFunc: String):
 	#Retrieve next line in dialogue file (DialogueLine object, contains text and responses array)
