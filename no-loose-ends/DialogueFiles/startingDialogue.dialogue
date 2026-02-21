@@ -17,7 +17,7 @@ Select assasination tool
 - Poison
 	set globalVariables.assasinationTool = "Poison"
 
-do change_to_lab_assistant()
+#do change_to_lab_assistant()
 --Lab assistant interrogation--
 =>< labAssistantSnippet/labAssistant
 
