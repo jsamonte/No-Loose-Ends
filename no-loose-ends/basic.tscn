@@ -41,7 +41,7 @@ hand_material_override = ExtResource("3_5aski")
 enable_passthrough = true
 
 [node name="Viewport2Din3D" parent="." unique_id=718221118 instance=ExtResource("5_ehqhh")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.5, 0.75, -1.5)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.75, -1.5)
 scene = ExtResource("6_ehqhh")
 transparent = 1
 filter = false
@@ -52,4 +52,4 @@ stream = ExtResource("8_7v3jb")
 autoplay = true
 
 [node name="BodyBase02" parent="." unique_id=863134625 instance=ExtResource("9_cuoxv")]
-transform = Transform3D(-0.5, 0, -4.371139e-08, 0, 0.5, 0, 4.371139e-08, 0, -0.5, 0, -1.8573043, -3.654)
+transform = Transform3D(-0.4, 0, -3.4969112e-08, 0, 0.4, 0, 3.4969112e-08, 0, -0.4, 0, -2.5, -3.654)
