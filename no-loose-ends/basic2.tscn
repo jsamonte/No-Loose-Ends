@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://mwtuuvmd1rhw"]
+
+[ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="1_na8m4"]
+[ext_resource type="PackedScene" uid="uid://nqiyqnx42m61" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_fullglove_physics_hand.tscn" id="2_3nh41"]
+[ext_resource type="Material" uid="uid://dyuaw57o8y3i" path="res://addons/godot-xr-tools/materials/highlight.tres" id="3_oki7b"]
+[ext_resource type="PackedScene" uid="uid://cigx2gnf4tg4d" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_fullglove_physics_hand.tscn" id="4_fxvgi"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="5_j88wt"]
+[ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="6_umtmr"]
+[ext_resource type="AudioStream" uid="uid://dhvo281bty3kx" path="res://Music/MusicForTest/Aquarium Draft 4.wav" id="7_ko2am"]
+[ext_resource type="PackedScene" uid="uid://wd3r3l2j44g2" path="res://3DModels/SecurityGuard.glb" id="8_na8m4"]
+
+[node name="Node3D" type="Node3D" unique_id=612837339]
+
+[node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=558999166]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D" unique_id=983110894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.015687883)
+
+[node name="LeftHandXRController3D" type="XRController3D" parent="XROrigin3D" unique_id=1548130949]
+tracker = &"left_hand"
+
+[node name="FunctionPointer" parent="XROrigin3D/LeftHandXRController3D" unique_id=609868014 instance=ExtResource("1_na8m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02, 0.05, -0.1)
+
+[node name="LeftPhysicsHand" parent="XROrigin3D/LeftHandXRController3D" unique_id=1747429310 instance=ExtResource("2_3nh41")]
+transform = Transform3D(-0.015218668, 0.9998842, 0, -0.9998842, -0.015218668, 0, 0, 0, 1, 0, 0, 0)
+hand_material_override = ExtResource("3_oki7b")
+
+[node name="RightHandXRController3D" type="XRController3D" parent="XROrigin3D" unique_id=1772716476]
+tracker = &"right_hand"
+
+[node name="FunctionPointer" parent="XROrigin3D/RightHandXRController3D" unique_id=139464171 instance=ExtResource("1_na8m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02, 0.05, -0.1)
+
+[node name="RightPhysicsHand" parent="XROrigin3D/RightHandXRController3D" unique_id=365751437 instance=ExtResource("4_fxvgi")]
+transform = Transform3D(0.01563755, -0.99987775, 0, 0.99987775, 0.01563755, 0, 0, 0, 1, 0, 0, 0)
+collision_layer = 131073
+hand_material_override = ExtResource("3_oki7b")
+
+[node name="Viewport2Din3D" parent="." unique_id=1648833397 instance=ExtResource("5_j88wt")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, -0.25, -1.311)
+scene = ExtResource("6_umtmr")
+viewport_size = Vector2(810, 450)
+transparent = 1
+filter = false
+scene_properties_keys = PackedStringArray()
+
+[node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("6_umtmr")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2129480650]
+stream = ExtResource("7_ko2am")
+autoplay = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1611043346]
+transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
+
+[node name="SecurityGuard" parent="." unique_id=1645649443 instance=ExtResource("8_na8m4")]
+transform = Transform3D(-0.4, 0, -6.039832e-08, 0, 0.4, 0, 6.039832e-08, 0, -0.4, 0, -2.5, -3.654)
