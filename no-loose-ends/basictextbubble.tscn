@@ -10,10 +10,9 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1551159719]
+transparent_bg = true
 handle_input_locally = false
 render_target_update_mode = 4
-
-[node name="Camera2D" type="Camera2D" parent="SubViewportContainer/SubViewport" unique_id=1058904789]
 
 [node name="DialogueBox" type="Control" parent="SubViewportContainer/SubViewport" unique_id=1469010727]
 layout_mode = 3
@@ -47,3 +46,5 @@ offset_right = 2.0
 offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Camera2D" type="Camera2D" parent="SubViewportContainer" unique_id=1058904789]
