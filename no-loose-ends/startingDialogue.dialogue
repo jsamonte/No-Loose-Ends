@@ -12,14 +12,14 @@ Select assasination tool
 - Poison
 	set globalVariables.assasinationTool = "Poison"
 
-#Select person to frame
-#-Lab assistant
-#set globalVariables.personSuspected = "Lab assistant"
-#-Security guard
-#set globalVariables.personSuspected = "Security guard"
-#-Homeless person
-#set globalVariables.personSuspected = "Homeless person"
-#-Janitor
-#set globalVariables.personSuspected = "Janitor"
+Select person to frame
+- Lab assistant
+	set globalVariables.personSuspected = "Lab assistant"
+- Security guard
+	set globalVariables.personSuspected = "Security guard"
+- Homeless person
+	set globalVariables.personSuspected = "Homeless person"
+- Janitor
+	set globalVariables.personSuspected = "Janitor"
 
 => END
