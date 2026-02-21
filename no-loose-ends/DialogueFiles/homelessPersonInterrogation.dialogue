@@ -10,6 +10,7 @@
 	- You: Are you familiar with the particle accelerator? 
 		HomelessPerson: Yeah, it's that thing y'all cops use to see who’s speeding.
 		=> homelessPerson
+	- Next
 else if globalVariables.assasinationTool == "Gun shot":
 	Choose one
 	- You: What is your relation to the Dr. Ash Renee?
@@ -21,6 +22,7 @@ else if globalVariables.assasinationTool == "Gun shot":
 	- You: Do you own any firearms? 
 		HomelessPerson: Only on the 4th of July.
 		=> homelessPerson
+	- Next
 else if globalVariables.assasinationTool == "Stab wounds":
 	Choose one
 	- You: What is your relation to the Dr. Ash Renee?
@@ -32,6 +34,7 @@ else if globalVariables.assasinationTool == "Stab wounds":
 	- You: Are there any sharp objects in the lab? 
 		HomelessPerson: It's the only thing keeping me safe from the voices.
 		=> homelessPerson
+	- Next
 else if globalVariables.assasinationTool == "Poison":
 	Choose one
 	- You: What is your relation to the Dr. Ash Renee?
@@ -43,5 +46,5 @@ else if globalVariables.assasinationTool == "Poison":
 	- You: Have you been in contact with anything poisonous lately? Anything toxic?
 		HomelessPerson: I didn’t murder the guy, but I sell stuff if ya know what I mean.
 		=> homelessPerson
-- Next
+	- Next
 => END

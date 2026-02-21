@@ -1,0 +1,50 @@
+~ janitor
+ if globalVariables.assasinationTool == "Lab equipment": 
+	Choose one
+	- You: What is your relation to the Dr. Ash Renee?
+		Janitor: Seemed like smart guy. I really thought he was gonna change the world.
+		=> janitor
+	- You: What were you doing the night the Doctor died?
+		Janitor: I was working my other job as a delivery guy.
+		=> janitor
+	- You: Do you know what particle accelerator is?
+		Janitor: Yeah, I have to make sure it's spotless clean everyday.
+		=> janitor
+	- Next
+else if globalVariables.assasinationTool == "Gun shot":
+	Choose one
+	- You: What is your relation to the Dr. Ash Renee?
+		Janitor: Seemed like smart guy. I really thought he was gonna change the world.
+		=> janitor
+	- You: What were you doing the night the Doctor died?
+		Janitor: I was working my other job as a delivery guy.
+		=> janitor
+	- You: Do you own any firearms? 
+		Janitor: Yes, I live in a bad neighborhood.
+		=> janitor
+	- Next
+else if globalVariables.assasinationTool == "Stab wounds":
+	Choose one
+	- You: What is your relation to the Dr. Ash Renee?
+		Janitor: Seemed like smart guy. I really thought he was gonna change the world.
+		=> janitor
+	- You: What were you doing the night the Doctor died?
+		Janitor: I was working my other job as a delivery guy.
+		=> janitor
+	- You: Are there any sharp objects in the lab? 
+		Janitor: No, not really.
+		=> janitor
+	- Next
+else if globalVariables.assasinationTool == "Poison":
+	Choose one
+	- You: What is your relation to the Dr. Ash Renee?
+		Janitor: Seemed like smart guy. I really thought he was gonna change the world.
+		=> janitor
+	- You: What were you doing the night the Doctor died?
+		Janitor: I was working my other job as a delivery guy.
+		=> janitor
+	- You: Have you been in contact with anything poisonous lately? Anything toxic?
+		Janitor: Other than heavy duty cleaning supplies, no.
+		=> janitor
+	- Next
+=> END

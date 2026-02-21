@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ciurie7a4758i"
+path="res://.godot/imported/homelessPersonInterrogation.dialogue-a1d9a481d1eb9eb3ac69bb04a1dca135.tres"
+
+[deps]
+
+source_file="res://DialogueFiles/homelessPersonInterrogation.dialogue"
+dest_files=["res://.godot/imported/homelessPersonInterrogation.dialogue-a1d9a481d1eb9eb3ac69bb04a1dca135.tres"]
+
+[params]
+
+defaults=true

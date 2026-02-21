@@ -1,7 +1,7 @@
-import "res://DialogueFiles/labAssistant.dialogue" as labAssistantSnippet
-import "res://DialogueFiles/securityGuard.dialogue" as securityGuardSnippet
-import "res://DialogueFiles/homelessPerson.dialogue" as homelessPersonSnippet
-import "res://DialogueFiles/janitor.dialogue" as janitorSnippet
+import "res://DialogueFiles/labAssistantInterrogation.dialogue" as labAssistantSnippet
+import "res://DialogueFiles/securityGuardInterrogation.dialogue" as securityGuardSnippet
+import "res://DialogueFiles/homelessPersonInterrogation.dialogue" as homelessPersonSnippet
+import "res://DialogueFiles/janitorInterrogation.dialogue" as janitorSnippet
 
 ~ start
 "So, if you were to kill someone, would you get caught?"
@@ -17,33 +17,31 @@ Select assasination tool
 - Poison
 	set globalVariables.assasinationTool = "Poison"
 
+--Lab assistant interrogation--
+=>< labAssistantSnippet/labAssistant
+
+--Security guard interrogation--
+=>< securityGuardSnippet/securityGuard
+
+--Homeless person interrogation
+=>< homelessPersonSnippet/homelessPerson
+
+--Janitor interrogation--
+=>< janitorSnippet/janitor
+
 Select person to frame
 - Lab assistant
 	set globalVariables.personSuspected = "Lab assistant"
-	=> labAssistant
+#	=> labAssistant winOrLose
 - Security guard
 	set globalVariables.personSuspected = "Security guard"
-	=> securityGuard
+#	=> securityGuard winOrLose
 - Homeless person
 	set globalVariables.personSuspected = "Homeless person"
-	=> homelessPerson
+#	=> homelessPerson winOrLose
 - Janitor
 	set globalVariables.personSuspected = "Janitor"
-	=> janitor
+#	=> janitor winOrLose
 => END
 
-~ labAssistant
-=> labAssistantSnippet/labAssistant
-=> END
 
-~ securityGuard
-=> securityGuardSnippet/securityGuard
-=> END
-
-~ homelessPerson
-=> homelessPersonSnippet/homelessPerson
-=> END
-
-~ janitor
-=> janitorSnippet/janitor
-=> END
