@@ -3,6 +3,11 @@ import "res://DialogueFiles/securityGuardInterrogation.dialogue" as securityGuar
 import "res://DialogueFiles/homelessPersonInterrogation.dialogue" as homelessPersonSnippet
 import "res://DialogueFiles/janitorInterrogation.dialogue" as janitorSnippet
 
+import "res://DialogueFiles/labAssistantInterrogation2.dialogue" as labAssistantSnippet2
+import "res://DialogueFiles/securityGuardInterrogation2.dialogue" as securityGuardSnippet2
+import "res://DialogueFiles/homelessPersonInterrogation2.dialogue" as homelessPersonSnippet2
+import "res://DialogueFiles/janitorInterrogation2.dialogue" as janitorSnippet2
+
 ~ start
 "So, if you were to kill someone, would you get caught?"
 "Nah, I'd get away with it"
@@ -65,13 +70,17 @@ Select person to frame
 => END
 
 ~ labAssistantInterrogation2
+=>< labAssistantSnippet2/labAssistant_Interrogation2
 => END
 
 ~ securityGuardInterrogation2
+=>< securityGuardSnippet2/securityGuard_Interrogation2
 => END
 
 ~ homelessPersonInterrogation2
+=>< homelessPersonSnippet2/homelessPerson_Interrogation2
 => END
 
 ~ janitorInterrogation2
+=>< janitorSnippet2/janitor_Interrogation2
 => END

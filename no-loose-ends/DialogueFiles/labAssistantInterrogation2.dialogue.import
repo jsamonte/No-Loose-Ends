@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bgmagqsihdegb"
+path="res://.godot/imported/labAssistantInterrogation2.dialogue-5d828b646b229d0a6e4d7243e5a505c9.tres"
+
+[deps]
+
+source_file="res://DialogueFiles/labAssistantInterrogation2.dialogue"
+dest_files=["res://.godot/imported/labAssistantInterrogation2.dialogue-5d828b646b229d0a6e4d7243e5a505c9.tres"]
+
+[params]
+
+defaults=true
