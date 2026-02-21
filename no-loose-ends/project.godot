@@ -22,6 +22,11 @@ XRToolsUserSettings="*uid://bqgb8i74tm0t"
 XRToolsRumbleManager="*uid://by853dk86g1qw"
 globals="*uid://cpf7s0k8jhkq0"
 
+[display]
+
+window/size/resizable=false
+window/vsync/vsync_mode=0
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg")
