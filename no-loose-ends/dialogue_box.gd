@@ -39,7 +39,7 @@ func show_dialogue():
 			var button = Button.new()
 			button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 			button.text = response.text
-			button.add_theme_font_size_override("font_size", 24)
+			button.add_theme_font_size_override("font_size", 48)
 			#If button is pressed, run the on_choice_pressed() function
 			button.pressed.connect(func(): on_choice_pressed(response))
 			choices_container.add_child(button)
@@ -47,7 +47,7 @@ func show_dialogue():
 		#Create default next button to continue dialogue
 		var next_button = Button.new()
 		next_button.text = "Next >"
-		next_button.add_theme_font_size_override("font_size", 24)
+		next_button.add_theme_font_size_override("font_size", 48)
 		next_button.pressed.connect(func(): on_next_pressed())
 		choices_container.add_child(next_button)
 		
