@@ -52,4 +52,3 @@ grow_vertical = 2
 
 [node name="Camera2D" type="Camera2D" parent="SubViewportContainer" unique_id=1058904789]
 position = Vector2(241, 331)
-zoom = Vector2(0.2, 0.2)

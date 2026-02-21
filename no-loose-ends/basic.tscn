@@ -15,6 +15,7 @@
 [node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=875051348]
 
 [node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D" unique_id=396536274]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.015687883)
 
 [node name="LeftHandXRController3D" type="XRController3D" parent="XROrigin3D" unique_id=1223899391]
 tracker = &"left_hand"
