@@ -39,7 +39,7 @@ else if globalVariables.assasinationTool == "Poison":
 	- You: What were you doing the night the Doctor died?
 		SecurityGuard: Watching the Super Bowl
 		=> securityGuard
-	- You: Are there any poisons materials in your lab? 
+	- You: Have you been in contact with anything poisonous lately? Anything toxic?
 		SecurityGuard: I think they have a particle smasher thing, but other than that, I have no clue what else they have in there.
 		=> securityGuard
 - Next
