@@ -26,7 +26,7 @@ func show_dialogue():
 		return
 		
 	#Set current dialogue line
-	dialogue_label.text = "[center]" + current_dialogue_line.text + "[/center]"
+	dialogue_label.text = current_dialogue_line.text
 	
 	#Clear any previous choices
 	clear_choices()
