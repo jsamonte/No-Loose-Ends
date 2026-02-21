@@ -1,7 +1,7 @@
 extends Control
 
 #Load dialogue file
-const Dialogue_File = preload("res://homelessPerson.dialogue")
+const Dialogue_File = preload("res://labAssistant.dialogue")
 
 #Define DialogueLabel and ChoicesContainer as variables when scene finbishes loading
 @onready var dialogue_label = $DialogueLabel
@@ -10,7 +10,7 @@ const Dialogue_File = preload("res://homelessPerson.dialogue")
 var current_dialogue_line
 
 func _ready():
-	start_dialogue("homelessPerson")
+	start_dialogue("labAssistant")
 	
 func start_dialogue(dialogueFunc: String):
 	#Retrieve next line in dialogue file (DialogueLine object, contains text and responses array)
@@ -37,6 +37,7 @@ func show_dialogue():
 		for response in current_dialogue_line.responses:
 			#Creates button to hold choice
 			var button = Button.new()
+			button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 			button.text = response.text
 			button.add_theme_font_size_override("font_size", 24)
 			#If button is pressed, run the on_choice_pressed() function
