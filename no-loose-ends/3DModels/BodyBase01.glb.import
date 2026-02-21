@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://csr5wqocq50md"
-path="res://.godot/imported/BodyBase.glb-85e11c755e2c9ec5951b44c3a3bacc27.scn"
+uid="uid://cu8xkl7rbva7g"
+path="res://.godot/imported/BodyBase01.glb-c56842d71359c691ab353b61f319faec.scn"
 
 [deps]
 
-source_file="res://3DModels/BodyBase.glb"
-dest_files=["res://.godot/imported/BodyBase.glb-85e11c755e2c9ec5951b44c3a3bacc27.scn"]
+source_file="res://3DModels/BodyBase01.glb"
+dest_files=["res://.godot/imported/BodyBase01.glb-c56842d71359c691ab353b61f319faec.scn"]
 
 [params]
 
