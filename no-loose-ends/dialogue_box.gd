@@ -1,7 +1,7 @@
 extends Control
 
 #Load dialogue file
-const Dialogue_File = preload("res://dialogueFile.dialogue")
+const Dialogue_File = preload("res://startingDialogue.dialogue")
 
 #Define DialogueLabel and ChoicesContainer as variables when scene finbishes loading
 @onready var dialogue_label = $DialogueLabel
