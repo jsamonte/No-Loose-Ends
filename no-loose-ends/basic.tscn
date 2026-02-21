@@ -38,4 +38,4 @@ enable_passthrough = true
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.75, -1.5)
 scene = ExtResource("6_ehqhh")
 transparent = 1
-scene_properties_keys = PackedStringArray("globals.gd")
+scene_properties_keys = PackedStringArray()

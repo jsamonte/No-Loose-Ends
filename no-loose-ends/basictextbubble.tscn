@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cpf7s0k8jhkq0" path="res://globals.gd" id="1_kf1t2"]
 [ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/dialogue_label.gd" id="1_np7v8"]
-[ext_resource type="Script" path="res://dialogue_box.gd" id="1_plhv7"]
+[ext_resource type="Script" uid="uid://bcosjag8j686d" path="res://dialogue_box.gd" id="1_plhv7"]
 
 [node name="Node2D" type="Node2D" unique_id=1605353438]
 script = ExtResource("1_kf1t2")
@@ -12,7 +12,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1551159719]
-transparent_bg = true
 handle_input_locally = false
 render_target_update_mode = 4
 
