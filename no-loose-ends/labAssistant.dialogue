@@ -1,0 +1,18 @@
+~ labAssistant
+	Choose one
+	-You: What is your relation to the Dr. Ash Renee?
+		Assistant: He was a mentor of mine. He was really bossy, but I am sure he had good intentions!
+		=> labAssistant
+	-You: What were you doing the night the Doctor died?
+		Assistant: I was walking the dog
+		=> labAssistant
+	-You: Are you familiar with the particle accelerator? [if globals.assasinationTool == "Lab equipment"]
+		Assistant: Yes I use it every day for the lab
+	-You: Do you own any firearms? [if globals.assasinationTool == "Gun shot"]
+		Assistant: No I live in a safe neighborhood
+	-You: Are there any sharp objects in the lab? [if globals.assasinationTool == "Stab wounds"]
+		Assistant: We work high energy particles, but there aren’t any sharp objects
+	-You: Are there any poisons materials in your lab? [if globals.assasinationTool == "Poison"] 
+		Assistant: Of course! The fuel we use is very toxic and I have access to it as well if you’d like to see.
+	-Next
+=> END

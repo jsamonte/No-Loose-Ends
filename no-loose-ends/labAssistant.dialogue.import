@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cc82rsfj1lp16"
+path="res://.godot/imported/labAssistant.dialogue-1507bb197073966971c6bb89ee4e59e8.tres"
+
+[deps]
+
+source_file="res://labAssistant.dialogue"
+dest_files=["res://.godot/imported/labAssistant.dialogue-1507bb197073966971c6bb89ee4e59e8.tres"]
+
+[params]
+
+defaults=true
