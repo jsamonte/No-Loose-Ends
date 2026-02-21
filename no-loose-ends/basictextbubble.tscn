@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://bcosjag8j686d" path="res://dialogue_box.gd" id="1_plhv7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_plhv7"]
-bg_color = Color(0.51745236, 0.59592533, 0.7931037, 1)
+bg_color = Color(0.3529412, 0.09411765, 0.02745098, 1)
 border_width_left = 10
 border_width_top = 10
 border_width_right = 10

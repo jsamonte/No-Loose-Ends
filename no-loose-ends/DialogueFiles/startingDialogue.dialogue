@@ -9,7 +9,7 @@ import "res://DialogueFiles/homelessPersonInterrogation2.dialogue" as homelessPe
 import "res://DialogueFiles/janitorInterrogation2.dialogue" as janitorSnippet2
 
 ~ start
-"So, if you were to kill someone, would you get caught?"
+"So, if you were to kill someone, would you get caught?" 
 "Nah, I'd get away with it"
 
 Select assasination tool
@@ -40,7 +40,7 @@ do change_to_homeless_person()
 => END
 
 ~ homelessPersonInterrogation
---Homeless person interrogation
+--Homeless person interrogation--
 =>< homelessPersonSnippet/homelessPerson
 set globalVariables.nextDialogueName = "janitorInterrogation"
 do change_to_janitor()
@@ -71,16 +71,52 @@ Select person to frame
 
 ~ labAssistantInterrogation2
 =>< labAssistantSnippet2/labAssistant_Interrogation2
+set globalVariables.nextDialogueName = "result"
+do load_outro_scene()
 => END
 
 ~ securityGuardInterrogation2
 =>< securityGuardSnippet2/securityGuard_Interrogation2
+set globalVariables.nextDialogueName = "result"
+do load_outro_scene()
 => END
 
 ~ homelessPersonInterrogation2
 =>< homelessPersonSnippet2/homelessPerson_Interrogation2
+set globalVariables.nextDialogueName = "result"
+do load_outro_scene()
 => END
 
 ~ janitorInterrogation2
 =>< janitorSnippet2/janitor_Interrogation2
+set globalVariables.nextDialogueName = "result"
+do load_outro_scene()
+=> END
+
+~ result
+if globalVariables.gotAwayWithIt == true
+	You got away with it
+	- Play again?
+		=>< playAgain
+	- End?
+		=>< endScene
+if globalVariables.justiceServed == true
+	Justice is served
+	- Play again?
+		=>< playAgain
+	- End?
+		=>< endScene
+=> END
+
+~ playAgain
+set globalVariables.personSuspected = "" 
+set globalVariables.assasinationTool = "" 
+set globalVariables.nextDialogueName = "start"
+set globalVariables.gotAwayWithIt = false
+set globalVariables.justiceServed = false
+do load_intro_scene()
+=> END
+
+~ endScene
+Total number of wins\: {{globalVariables.wins}}.
 => END

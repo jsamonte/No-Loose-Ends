@@ -21,7 +21,7 @@ func start_dialogue(dialogueFunc: String):
 func show_dialogue():
 	#If reached end of dialogue file
 	if current_dialogue_line == null:
-		dialogue_label.text = "Conversation ended"
+		dialogue_label.text = "The End"
 		clear_choices()
 		return
 		

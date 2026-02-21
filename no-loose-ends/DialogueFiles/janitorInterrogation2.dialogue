@@ -1,14 +1,13 @@
 ~ janitor_Interrogation2
 if globalVariables.assasinationTool == "Lab equipment":
 	The process of cleaning the particle accelerator does not match the lab incident. Therefore, you are investigated and found guilty.
-	Justice is served
-	- Play again?
-	- End?
+	set globalVariables.justiceServed = true
+	set globalVariables.gotAwayWithIt = false
 elif globalVariables.assasinationTool == "Gun shot":
 	The Security Guard was able to prove he did not fire his gun, therefore he is safe from persecution. However, the janitor was the only one else in the facility with a gun so he was quickly detained. 
-	You got away with it
-	- Play again?
-	- End?
+	set globalVariables.justiceServed = false
+	set globalVariables.gotAwayWithIt = true
+	set globalVariables.wins = globalVariables.wins + 1
 elif globalVariables.assasinationTool == "Stab wounds":
 	I have cleaned the laboratory for years, and this is the thanks I get?
 	- We believe you got rid of the weapon and are lying
@@ -17,28 +16,24 @@ elif globalVariables.assasinationTool == "Stab wounds":
 			I don’t have that kind of money
 			- Get the purchase record from the bank
 				All his purchases are justifiable with zero suspicious activity. Blaming the janitor now seems suspicious, and after further investigation, you are arrested. 
-				Justice is served
-				- Play again?
-				- End?
+				set globalVariables.justiceServed = true
+				set globalVariables.gotAwayWithIt = false
 		- Get a search warrant
 			Nothing in his apartment matches the stab wound, and you are arrested after investigation since it became obvious you had ulterior motives.
-			Justice is served
-			- Play again?
-			- End?
+			set globalVariables.justiceServed = true
+			set globalVariables.gotAwayWithIt = false
 	- We believe you hired a hit man
 		I don’t have that kind of money
 		- We believe you got rid of the weapon and are lying
 			The only thing I’m hiding is my middle finger
 			- Get a search warrant
 				Nothing in his apartment matches the stab wound, and you are arrested after investigation since it became obvious you had ulterior motives.
-				Justice is served
-				- Play again?
-				- End?
+				set globalVariables.justiceServed = true
+				set globalVariables.gotAwayWithIt = false
 		- Get the purchase record from the bank
 			All his purchases are justifiable with zero suspicious activity. Blaming the janitor now seems suspicious, and after further investigation, you are arrested. 
-			Justice is served
-			- Play again?
-			- End?
+			set globalVariables.justiceServed = true
+			set globalVariables.gotAwayWithIt = false
 elif globalVariables.assasinationTool == "Poison":
 	I have cleaned the laboratory for years and this is the thanks I get?
 	- We believe that you may have poisoned the Doctor since you have access to the lab, including the fridge
@@ -47,26 +42,24 @@ elif globalVariables.assasinationTool == "Poison":
 			The only toxic fumes here are the ones coming out of your mouth.
 			- Search warrant
 				No signs of toxic chemicals, but it was discovered that some chemicals mixed together produce fumes capable of killing a human. The janitor is arrested.
-				You got away with it
-				- Play again?
-				- End?
+				set globalVariables.justiceServed = false
+				set globalVariables.gotAwayWithIt = true
+				set globalVariables.wins = globalVariables.wins + 1
 		- Get the purchase history from the bank.
 			All his purchases are justifiable with zero suspicious activity. Blaming the janitor now seems suspicious and after further investigation, you are arrested.
-			Justice is served
-			- Play again?
-			- End?
+			set globalVariables.justiceServed = true
+			set globalVariables.gotAwayWithIt = false
 	- We have reason to suspect that you caused the toxic fumes that killed the doctor
 		The only toxic fumes here are the ones coming out of your mouth
 		- We believe that you may have poisoned the Doctor since you have access to the lab, including the fridge
 			The only thing suspicious about that fridge is how often your mom visits it.
 			- Get their purchase history from the bank.
 				All his purchases are justifiable with zero suspicious activity. Blaming the janitor now seems suspicious and after further investigation, you are arrested.
-				Justice is served
-				- Play again?
-				- End?
+				set globalVariables.justiceServed = true
+				set globalVariables.gotAwayWithIt = false
 		- Search warrant
 			No signs of toxic chemicals, but it was discovered that some chemicals mixed together produce fumes capable of killing a human. The janitor is arrested.
-			You got away with it
-			- Play again?
-			- End?
+			set globalVariables.justiceServed = false
+			set globalVariables.gotAwayWithIt = true
+			set globalVariables.wins = globalVariables.wins + 1
 => END

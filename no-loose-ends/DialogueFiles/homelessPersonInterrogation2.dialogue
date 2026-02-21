@@ -7,28 +7,26 @@ if globalVariables.assasinationTool == "Lab equipment":
 			I don’t have a car, so how can it be sabotaged?
 			- Get security footage
 				You replace the security footage with AI generated footage that shows the homeless man sabotaging the accelerator. However, in the footage, depending on the hand, he has 6 to 7 fingers. You are thrown in jail.
-				Justice is served
-				- Play again?
-				- End?
+				set globalVariables.justiceServed = true
+				set globalVariables.gotAwayWithIt = false
 		- Get shoe size of the homeless person
 			The shoe size matches, and with quick thinking, you donate the shoes you use in the crime scene to the homeless man. With the homeless man in possession of the source of the footprints, he is thrown to the slammer.
-			You got away with it
-			- Play again?
-			- End?
+			set globalVariables.justiceServed = false
+			set globalVariables.gotAwayWithIt = true
+			set globalVariables.wins = globalVariables.wins + 1
 	- Are you aware of how the particle accelerator was sabotaged?
 		I don’t have a car, so how can it be sabotaged?
 		- We believe you sabotaged the particle accelerator. There are footprints in the lab that do not belong to the Doctor. Do you have anything to say about that?
 			Well, yeah. Everyone wears shoes including me
 			- Get shoe size of the homeless person
 				The shoe size matches, and with quick thinking, you donate the shoes you use in the crime scene to the homeless man. With the homeless man in possession of the source of the footprints, he is thrown to the slammer.
-				You got away with it
-				- Play again?
-				- End?
+				set globalVariables.justiceServed = false
+				set globalVariables.gotAwayWithIt = true
+				set globalVariables.wins = globalVariables.wins + 1
 		- Get security footage
 			You replace the security footage with AI generated footage that shows the homeless man sabotaging the accelerator. However, in the footage, depending on the hand, he has 6 to 7 fingers. You are thrown in jail.
-			Justice is served
-			- Play again?
-			- End?
+			set globalVariables.justiceServed = true
+			set globalVariables.gotAwayWithIt = false
 elif globalVariables.assasinationTool == "Gun shot":
 	Me? A Suspect? I see I’m not the only one on the influence haha?
 	- We believe you got rid of the weapon and are lying
@@ -37,36 +35,33 @@ elif globalVariables.assasinationTool == "Gun shot":
 			Ummm don’t you need money for that?
 			- Search his main sleeping area
 				There is zero money around the area, so you plant money near a bush near the sleeping area. However, he finds it and spends it. You look suspicious, and under further investigation you are arrested.
-				Justice is served
-				- Play again?
-				- End?
+				set globalVariables.justiceServed = true
+				set globalVariables.gotAwayWithIt = false
 		- Search his main sleeping area
 			Zero guns or bullets are found, so you plant the evidence near a bush near his sleeping area. The cops find it and the homeless man is detained.
-			You got away with it
-			- Play again?
-			- End?
+			set globalVariables.justiceServed = false
+			set globalVariables.gotAwayWithIt = true
+			set globalVariables.wins = globalVariables.wins + 1
 	- We believe you found a hit man
 		Ummm don’t you need money for that?
 		- We believe you got rid of the weapon and are lying
 			Where would I even hide a gun? I have no home
 			- Search his main sleeping area
 				Zero guns or bullets are found, so you plant the evidence near a bush near his sleeping area. The cops find it and the homeless man is detained.
-				You got away with it
-				- Play again?
-				- End?
+				set globalVariables.justiceServed = false
+				set globalVariables.gotAwayWithIt = true
+				set globalVariables.wins = globalVariables.wins + 1
 		- Search his main sleeping area
 			There is zero money around the area, so you plant money near a bush near the sleeping area. However, he finds it and spends it. You look suspicious, and under further investigation you are arrested.
-			Justice is served
-			- Play again?
-			- End?
+			set globalVariables.justiceServed = true
+			set globalVariables.gotAwayWithIt = false
 elif globalVariables.assasinationTool == "Stab wounds":
 	The homeless man’s so-called “sharp object” is actually his “sharp” mind. You are arrested upon further investigation.
-	Justice is served
-	- Play again?
-	- End?
+	set globalVariables.justiceServed = true
+	set globalVariables.gotAwayWithIt = false
 elif globalVariables.assasinationTool == "Poison":
 	The homeless man’s “substances” that he sells were not only questionable, but also questionably made. People believe the Doctor was poisoned by purchasing these substances.
-	You got away with it
-	- Play again?
-	- End?
+	set globalVariables.justiceServed = false
+	set globalVariables.gotAwayWithIt = true
+	set globalVariables.wins = globalVariables.wins + 1
 => END
