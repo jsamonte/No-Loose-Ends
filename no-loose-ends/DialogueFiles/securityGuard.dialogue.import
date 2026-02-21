@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://21s3p1h3xas7"
+path="res://.godot/imported/securityGuard.dialogue-342fb7ce9cbf04a8a780c902b15f8ad9.tres"
+
+[deps]
+
+source_file="res://DialogueFiles/securityGuard.dialogue"
+dest_files=["res://.godot/imported/securityGuard.dialogue-342fb7ce9cbf04a8a780c902b15f8ad9.tres"]
+
+[params]
+
+defaults=true

@@ -1,7 +1,7 @@
 extends Node
 
-var personSuspected = ""
-var assasinationTool = "Lab equipment" #Lab equipment, Gun shot, Stab wounds, Poison
+var personSuspected = "" #Lab assistant, Security guard, Homeless person, Janitor
+var assasinationTool = "" #Lab equipment, Gun shot, Stab wounds, Poison
 
 
 # Called when the node enters the scene tree for the first time.
