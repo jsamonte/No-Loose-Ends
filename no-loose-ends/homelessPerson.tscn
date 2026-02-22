@@ -10,7 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://xw7oaqrgebl7" path="res://Music/BackgroundMusic/BaseStateAudio.wav" id="8_i841q"]
 [ext_resource type="PackedScene" uid="uid://leg2g6h1uo1h" path="res://3DModels/Homeless.glb" id="9_i841q"]
 
-[node name="Node3D" type="Node3D" unique_id=612837339]
+[node name="Node3D2" type="Node3D" unique_id=612837339]
 
 [node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=558999166]
 
