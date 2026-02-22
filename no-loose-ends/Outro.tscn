@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_lxv20"]
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="7_pv4bq"]
 [ext_resource type="AudioStream" uid="uid://gtjccb0x2hca" path="res://Music/BackgroundMusic/YouWinJingle.wav" id="8_8nisx"]
+[ext_resource type="PackedScene" uid="uid://dj6knvjc6pgu8" path="res://3DModels/Police.glb" id="9_g37r7"]
 
 [node name="Node3D" type="Node3D" unique_id=1790925141]
 
@@ -43,7 +44,7 @@ enable_passthrough = true
 [node name="Viewport2Din3D" parent="." unique_id=718221118 instance=ExtResource("6_lxv20")]
 transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, 0.25, -1.311)
 scene = ExtResource("7_pv4bq")
-viewport_size = Vector2(810, 450)
+viewport_size = Vector2(1300, 1000)
 transparent = 1
 filter = false
 scene_properties_keys = PackedStringArray()
@@ -56,3 +57,6 @@ autoplay = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1176344002]
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
+
+[node name="Police" parent="." unique_id=1611265801 instance=ExtResource("9_g37r7")]
+transform = Transform3D(-0.72390527, 0, -8.910062e-08, 0, 0.53439933, 0, 6.328581e-08, 0, -1.0191922, 0, -2.5330386, -3.654)

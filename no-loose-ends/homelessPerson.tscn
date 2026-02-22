@@ -44,7 +44,7 @@ enable_passthrough = true
 [node name="Viewport2Din3D" parent="." unique_id=1648833397 instance=ExtResource("6_jha4c")]
 transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, 0.25, -1.311)
 scene = ExtResource("7_ctpxa")
-viewport_size = Vector2(810, 450)
+viewport_size = Vector2(1300, 1000)
 transparent = 1
 filter = false
 scene_properties_keys = PackedStringArray()

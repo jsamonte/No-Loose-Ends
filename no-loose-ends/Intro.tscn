@@ -47,7 +47,7 @@ transform = Transform3D(-0.012700362, 0, -1.0520004, 0, 0.8772898, 0, 0.8560253,
 [node name="Viewport2Din3D" parent="." unique_id=718221118 instance=ExtResource("6_465o5")]
 transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.19063103, 1.4752839, -1.949627)
 scene = ExtResource("7_sfgsg")
-viewport_size = Vector2(810, 450)
+viewport_size = Vector2(1300, 1000)
 transparent = 1
 filter = false
 scene_properties_keys = PackedStringArray()
