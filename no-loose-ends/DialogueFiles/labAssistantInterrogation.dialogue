@@ -1,50 +1,50 @@
 ~ labAssistant
  if globalVariables.assasinationTool == "Lab equipment": 
-	Choose one
-	- You: What is your relation to the Dr. Ash Renee?
-		Assistant: He was a mentor of mine. He was really bossy, but I am sure he had good intentions!
+	Choose a question to ask
+	- What is your relation to the Dr. Ash Renee?
+		Assistant\: He was a mentor of mine. He was really bossy, but I am sure he had good intentions!
 		=> labAssistant
-	- You: What were you doing the night the Doctor died?
-		Assistant: I was walking the dog.
+	- What were you doing the night the Doctor died?
+		Assistant\: I was walking the dog.
 		=> labAssistant
-	- You: Are you familiar with the particle accelerator? 
-		Assistant: Yes, I use it every day for the lab.
+	- Are you familiar with the particle accelerator? 
+		Assistant\: Yes, I use it every day for the lab.
 		=> labAssistant
 	- Next
 else if globalVariables.assasinationTool == "Gun shot":
-	Choose one
-	- You: What is your relation to the Dr. Ash Renee?
-		Assistant: He was a mentor of mine. He was really bossy, but I am sure he had good intentions!
+	Choose a question to ask
+	- What is your relation to the Dr. Ash Renee?
+		Assistant\: He was a mentor of mine. He was really bossy, but I am sure he had good intentions!
 		=> labAssistant
-	- You: What were you doing the night the Doctor died?
-		Assistant: I was walking the dog.
+	- What were you doing the night the Doctor died?
+		Assistant\: I was walking the dog.
 		=> labAssistant
-	- You: Do you own any firearms? 
-		Assistant: No, I live in a safe neighborhood.
+	- Do you own any firearms? 
+		Assistant\: No, I live in a safe neighborhood.
 		=> labAssistant
 	- Next
 else if globalVariables.assasinationTool == "Stab wounds":
-	Choose one
-	- You: What is your relation to the Dr. Ash Renee?
-		Assistant: He was a mentor of mine. He was really bossy, but I am sure he had good intentions!
+	Choose a question to ask
+	- What is your relation to the Dr. Ash Renee?
+		Assistant\: He was a mentor of mine. He was really bossy, but I am sure he had good intentions!
 		=> labAssistant
-	- You: What were you doing the night the Doctor died?
-		Assistant: I was walking the dog.
+	- What were you doing the night the Doctor died?
+		Assistant\: I was walking the dog.
 		=> labAssistant
-	- You: Are there any sharp objects in the lab? 
-		Assistant: We work with high energy particles, but there aren’t any sharp objects.
+	- Are there any sharp objects in the lab? 
+		Assistant\: We work with high energy particles, but there aren’t any sharp objects.
 		=> labAssistant
 	- Next
 else if globalVariables.assasinationTool == "Poison":
-	Choose one
-	- You: What is your relation to the Dr. Ash Renee?
-		Assistant: He was a mentor of mine. He was really bossy, but I am sure he had good intentions!
+	Choose a question to ask
+	- What is your relation to the Dr. Ash Renee?
+		Assistant\: He was a mentor of mine. He was really bossy, but I am sure he had good intentions!
 		=> labAssistant
-	- You: What were you doing the night the Doctor died?
-		Assistant: I was walking the dog.
+	- What were you doing the night the Doctor died?
+		Assistant\: I was walking the dog.
 		=> labAssistant
-	- You: Are there any poisonous materials in your lab? 
-		Assistant: Of course! The fuel we use is very toxic; I have access to it as well if you’d like to see.
+	- Are there any poisonous materials in your lab? 
+		Assistant\: Of course! The fuel we use is very toxic; I have access to it as well if you’d like to see.
 		=> labAssistant
 	- Next
 => END

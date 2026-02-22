@@ -1,6 +1,6 @@
 ~ homelessPerson
  if globalVariables.assasinationTool == "Lab equipment": 
-	Choose one
+	Choose a question to ask
 	- You: What is your relation to the Dr. Ash Renee?
 		HomelessPerson: Huh? Who's that again?
 		=> homelessPerson
@@ -12,7 +12,7 @@
 		=> homelessPerson
 	- Next
 else if globalVariables.assasinationTool == "Gun shot":
-	Choose one
+	Choose a question to ask
 	- You: What is your relation to the Dr. Ash Renee?
 		HomelessPerson: Huh? Who's that again?
 		=> homelessPerson
@@ -24,7 +24,7 @@ else if globalVariables.assasinationTool == "Gun shot":
 		=> homelessPerson
 	- Next
 else if globalVariables.assasinationTool == "Stab wounds":
-	Choose one
+	Choose a question to ask
 	- You: What is your relation to the Dr. Ash Renee?
 		HomelessPerson: Huh? Who's that again?
 		=> homelessPerson
@@ -36,7 +36,7 @@ else if globalVariables.assasinationTool == "Stab wounds":
 		=> homelessPerson
 	- Next
 else if globalVariables.assasinationTool == "Poison":
-	Choose one
+	Choose a question to ask
 	- You: What is your relation to the Dr. Ash Renee?
 		HomelessPerson: Huh? Who's that again?
 		=> homelessPerson

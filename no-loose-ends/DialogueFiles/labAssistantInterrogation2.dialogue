@@ -5,11 +5,11 @@ if globalVariables.assasinationTool == "Lab equipment":
 	set globalVariables.gotAwayWithIt = true
 	set globalVariables.wins = globalVariables.wins + 1
 elif globalVariables.assasinationTool == "Gun shot":
-	Why am I the main suspect!?!? I don’t even own a gun?!?!
+	Assistant\: Why am I the main suspect!?!? I don’t even own a gun?!?!
 	- We believe you got rid of the weapon and are lying
-		I’m not hiding anything
+		Assistant\: I’m not hiding anything
 		- We believe you hired a hit man
-			I don’t have that kind of money
+			Assistant\: I don’t have that kind of money
 			- Get purchase record from bank
 				Suspicious purchases are found, and it is enough to arrest the assistant.
 				set globalVariables.justiceServed = false
@@ -20,9 +20,9 @@ elif globalVariables.assasinationTool == "Gun shot":
 			set globalVariables.justiceServed = true
 			set globalVariables.gotAwayWithIt = false
 	- We believe you hired a hit man
-		I don’t have that kind of money
+		Assistant\: I don’t have that kind of money
 		- We believe you got rid of the weapon and are lying
-			I’m not hiding anything
+			Assistant\: I’m not hiding anything
 			- Get a search warrant
 				Zero guns or bullets are found and you are eventually arrested as the truth unveils. 
 				set globalVariables.justiceServed = true
@@ -33,11 +33,11 @@ elif globalVariables.assasinationTool == "Gun shot":
 			set globalVariables.gotAwayWithIt = true
 			set globalVariables.wins = globalVariables.wins + 1
 elif globalVariables.assasinationTool == "Stab wounds":
-	Why am I the main suspect!?!? There isn’t anything sharp in the Lab!
+	Assistant\: Why am I the main suspect!?!? There isn’t anything sharp in the Lab!
 	- We believe you got rid of the weapon and are lying
-		I’m not hiding anything
+		Assistant\: I’m not hiding anything
 		- We believe you hired a hit man
-			I don’t have that kind of money
+			Assistant\: I don’t have that kind of money
 			- Get purchase record from bank
 				Suspicious purchases are found, and combined with some “storytelling”, it is enough to arrest the assistant.
 				set globalVariables.justiceServed = false
@@ -48,9 +48,9 @@ elif globalVariables.assasinationTool == "Stab wounds":
 			set globalVariables.justiceServed = true
 			set globalVariables.gotAwayWithIt = false
 	- We believe you hired a hit man
-		I don’t have that kind of money
+		Assistant\: I don’t have that kind of money
 		- We believe you got rid of the weapon and are lying
-			I’m not hiding anything
+			Assistant\: I’m not hiding anything
 			- Get a search warrant
 				Nothing in his apartment matches the stab wound, and you are eventually arrested as the truth unveils. 
 				set globalVariables.justiceServed = true

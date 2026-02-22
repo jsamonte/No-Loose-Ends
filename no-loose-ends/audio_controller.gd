@@ -1,7 +1,7 @@
 extends Node
 
-const BGM_BUS_NAME = "BGM"
-#const SFX_BUS_NAME = "SFX"  
+#const BGM_BUS_NAME = "BGM"
+##const SFX_BUS_NAME = "SFX"  
 
 #@onready var bgm_bus_index = AudioServer.get_bus_index(BGM_BUS_NAME)
 #@onready var sfx_bus_index = AudioServer.get_bus_index(SFX_BUS_NAME)
@@ -16,18 +16,18 @@ func _ready():
 	#if sfx_bus_index == -1:
 		#push_error("Audio Bus '%s' not found." % SFX_BUS_NAME)
 
-func playBGM(stream: AudioStream, fade_in_duration: float = 1.0):
-	if not bgmPlayer:
-		bgmPlayer = AudioStreamPlayer.new()
-		bgmPlayer.bus = BGM_BUS_NAME
-		add_child(bgmPlayer)
-	bgmPlayer.stream = stream
-	bgmPlayer.volume_db = -80.0
-	bgmPlayer.play()
-	
-	var tween = create_tween()
-	tween.tween_property(bgmPlayer, "volume_db",0.0,fade_in_duration)
-	
+#func playBGM(stream: AudioStream, fade_in_duration: float = 1.0):
+	#if not bgmPlayer:
+		#bgmPlayer = AudioStreamPlayer.new()
+		#bgmPlayer.bus = BGM_BUS_NAME
+		#add_child(bgmPlayer)
+	#bgmPlayer.stream = stream
+	#bgmPlayer.volume_db = -80.0
+	#bgmPlayer.play()
+	#
+	#var tween = create_tween()
+	#tween.tween_property(bgmPlayer, "volume_db",0.0,fade_in_duration)
+	#
 #
 #func play_sfx(stream: AudioStream, position: Vector2 = Vector2.ZERO):
 	#var player: Node
@@ -54,15 +54,19 @@ func playBGM(stream: AudioStream, fade_in_duration: float = 1.0):
 	#AudioServer.set_bus_volume_db(sfx_bus_index, linear_to_db(clampf(linear_volume,0.0,1.0)))
 
 func playTrack1():
-	var musicFile = load("res://Music/BackgroundMusic/BaseStateAudio.wav")
-	playBGM(musicFile, 1)
+	bgmPlayer.stream = load("res://Music/BackgroundMusic/BaseStateAudio.wav")
+	bgmPlayer.play()
+	#playBGM(musicFile, 1)
+	
 	
 func playTrack2():
 	var musicFile = load("res://Music/BackgroundMusic/The Crime Scene.wav")
-	musicFile.set_loop_begin(0)
-	musicFile.set_loop_end(318000)
-	playBGM(musicFile, 1.5)
+	#musicFile.set_loop_begin(0)
+	#musicFile.set_loop_end(318000)
+	#playBGM(musicFile, 1.5)
+	bgmPlayer.play()
 	
 func playTrack3():
 	var musicFile = load("res://Music/BackgroundMusic/YouWinJingle.wav")
-	playBGM(musicFile, 1)
+	#playBGM(musicFile, 1)
+	bgmPlayer.play()
