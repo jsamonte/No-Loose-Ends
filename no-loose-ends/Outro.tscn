@@ -49,8 +49,5 @@ scene_properties_keys = PackedStringArray()
 
 [node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("7_pv4bq")]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1388074811]
-autoplay = true
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1176344002]
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)

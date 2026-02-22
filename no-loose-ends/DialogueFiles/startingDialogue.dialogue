@@ -9,12 +9,13 @@ import "res://DialogueFiles/homelessPersonInterrogation2.dialogue" as homelessPe
 import "res://DialogueFiles/janitorInterrogation2.dialogue" as janitorSnippet2
 
 ~ start
+do AudioController.playTrack2()
 "So, if you were to kill someone, would you get caught?" 
 "Nah, I'd get away with it"
 
 Instructions\n\nYou have murdered Dr. Ash Renee, a scientist who was close to developing everlasting renewable energy. We are guilty, but we must stage the evidence in a way that incriminates someone else. We are the detective in charge of the mystery.\nSelect the supposed murder weapon and talk to the 4 suspects to gain intel. Based on this info, pick who you will pin the blame on. Interrogate this person once more, choosing your questions wisely- will you win or will justice prevail?  
 
-
+do AudioController.playTrack1()
 Select assasination tool
 - Lab equipment
 	set globalVariables.assasinationTool = "Lab equipment"
@@ -98,13 +99,16 @@ do load_outro_scene()
 
 ~ result
 if globalVariables.gotAwayWithIt == true
-	You got away with it!\n⣿⣿⣿⣿⣿⡇⠀⠋⠿⢿⣿⣿⣿⣿⡿⠛⠙⢳⣿⣿⣿⣻⣿⡷⣺⣛⣿⣿⣿⣿⣿⣿⢷⡿\n⣿⣿⣿⣿⣿⣿⠀⡥⣮⣻⣯⠿⠋⠁⠀⢠⣾⠿⣱⣿⣝⣫⠚⡌⣢⢨⣿⣿⡿⠁⡿⣙⣾⡖\n⣿⣿⣿⣿⣿⣿⠀⠈⠝⡿⠁⠀⠀⠀⣹⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢈⠈⣿⣇⢢⣟⡿⠇⠠\n⣿⣿⣿⣿⣿⣿⣷⣶⡖⠀⠀⠀⢠⡍⣕⣿⣿⡾⣿⣿⣿⣿⠟⡴⢠⣶⡔⣿⣿⣾⣟⣁⢀⢗\n⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀⠀⢰⢯⣶⠞⢚⣬⣾⣿⣿⢿⣿⢥⣢⡺⣷⣭⢿⣿⣿⣆⢀⠉⠀\n⣿⣿⣿⣿⣿⣿⡟⠁⠠⣪⠀⣨⠎⣤⢤⡾⠽⠻⠿⠯⠨⠋⣺⠭⣻⡚⣟⣿⣿⣻⠮⣣⡠⠁\n⣿⣿⣿⣿⣿⣿⡀⢠⡄⠀⠰⣉⠌⣑⠊⠀⣠⠁⠀⢀⣀⠴⣾⣟⣘⡯⢒⣿⣷⡛⡗⡊⠫⠂\n⣿⣿⣿⣿⣿⡏⠈⡸⣯⠀⣰⠃⢘⠋⠀⠈⠋⠁⢀⣩⣿⡟⢿⣿⣿⣷⣼⢞⣹⣿⠁⠪⠀⢾\n⣿⣿⣿⣿⣿⡇⠀⠘⠨⢰⣿⡱⡀⠀⢀⣀⢀⠐⠺⣿⣿⣯⣜⣿⣿⣿⡿⠋⣣⣷⠣⠺⠑⢞\n⣿⣿⣿⣿⣿⣷⣆⠀⠀⣴⣿⣶⣶⠀⠜⣿⣾⣲⢷⣸⣯⣿⣿⣿⣥⡛⢕⠈⢗⣾⣋⡃⢐⣎\n⣿⣿⣿⣿⣿⣿⡿⠀⣴⣿⢗⢿⡏⢀⣠⠛⠚⢋⢬⣎⡽⣿⣿⣿⣿⣧⠈⠄⣿⣾⣯⣶⣿⣷\n⣿⣿⣿⣿⣿⡿⠁⠜⣿⡟⢿⣥⣆⠀⢵⣧⣶⣷⠷⣽⣔⣿⣿⣿⣿⣇⠈⢰⣷⣮⠹⣽⣿⣥\n⣿⣿⣿⣿⡿⠁⠀⢈⣿⣿⣿⣿⡽⢹⡻⢿⠿⣡⣛⣿⣿⣿⣿⣿⣿⡻⠂⠬⡿⡋⠠⣙⠉⠅\n⣿⣿⣿⡿⠁⠁⠠⡊⢊⢟⢽⣽⠟⢫⠈⢘⣧⢿⣿⣞⢿⣿⠿⣿⠃⠀⢐⢐⠠⠊⠐⠡⠲⡠\n⣿⣿⣿⠁⠀⠰⠀⠀⠂⡺⠏⠑⢐⠁⠇⠘⠛⢉⣻⡿⠒⠹⠒⡖⢠⠑⡗⡠⠣⢸⡶⡀⠂⣠\n⣿⣿⠃⠀⠀⠈⠁⢶⠷⠟⣈⡕⠖⠎⠀⠂⡤⠂⣚⡕⠀⢀⡠⣰⡿⠇⠜⠝⢲⠶⣿⡧⠄⣹\n⣿⡿⠀⠀⠀⠀⡐⠀⠐⠸⡮⠉⠠⠀⠠⠞⡢⠓⠖⣠⣠⠯⠚⣉⣶⣷⣶⣿⣲⣶⣾⣾⣿⣿\n⣿⠃⠀⠀⠀⡞⡷⢸⠀⡃⠀⠀⢢⠀⠋⢂⡶⠋⡠⠉⠄⠡⠀⣻⣿⣿⣿⣿⣿⣿⣿⡿⠛⢛\n⣿⡄⠀⠀⠀⠈⠁⠠⢀⠤⠈⠀⡶⠈⠤⠛⡠⣒⣉⡭⠀⡀⢐⢀⠀⠉⠀⠀⠈⣉⡥⠂⠡⠁\n
-	- Play again =>< playAgain
-	- End =>< endScene
+#	You got away with it!\n⣿⣿⣿⣿⣿⡇⠀⠋⠿⢿⣿⣿⣿⣿⡿⠛⠙⢳⣿⣿⣿⣻⣿⡷⣺⣛⣿⣿⣿⣿⣿⣿⢷⡿\n⣿⣿⣿⣿⣿⣿⠀⡥⣮⣻⣯⠿⠋⠁⠀⢠⣾⠿⣱⣿⣝⣫⠚⡌⣢⢨⣿⣿⡿⠁⡿⣙⣾⡖\n⣿⣿⣿⣿⣿⣿⠀⠈⠝⡿⠁⠀⠀⠀⣹⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢈⠈⣿⣇⢢⣟⡿⠇⠠\n⣿⣿⣿⣿⣿⣿⣷⣶⡖⠀⠀⠀⢠⡍⣕⣿⣿⡾⣿⣿⣿⣿⠟⡴⢠⣶⡔⣿⣿⣾⣟⣁⢀⢗\n⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀⠀⢰⢯⣶⠞⢚⣬⣾⣿⣿⢿⣿⢥⣢⡺⣷⣭⢿⣿⣿⣆⢀⠉⠀\n⣿⣿⣿⣿⣿⣿⡟⠁⠠⣪⠀⣨⠎⣤⢤⡾⠽⠻⠿⠯⠨⠋⣺⠭⣻⡚⣟⣿⣿⣻⠮⣣⡠⠁\n⣿⣿⣿⣿⣿⣿⡀⢠⡄⠀⠰⣉⠌⣑⠊⠀⣠⠁⠀⢀⣀⠴⣾⣟⣘⡯⢒⣿⣷⡛⡗⡊⠫⠂\n⣿⣿⣿⣿⣿⡏⠈⡸⣯⠀⣰⠃⢘⠋⠀⠈⠋⠁⢀⣩⣿⡟⢿⣿⣿⣷⣼⢞⣹⣿⠁⠪⠀⢾\n⣿⣿⣿⣿⣿⡇⠀⠘⠨⢰⣿⡱⡀⠀⢀⣀⢀⠐⠺⣿⣿⣯⣜⣿⣿⣿⡿⠋⣣⣷⠣⠺⠑⢞\n⣿⣿⣿⣿⣿⣷⣆⠀⠀⣴⣿⣶⣶⠀⠜⣿⣾⣲⢷⣸⣯⣿⣿⣿⣥⡛⢕⠈⢗⣾⣋⡃⢐⣎\n⣿⣿⣿⣿⣿⣿⡿⠀⣴⣿⢗⢿⡏⢀⣠⠛⠚⢋⢬⣎⡽⣿⣿⣿⣿⣧⠈⠄⣿⣾⣯⣶⣿⣷\n⣿⣿⣿⣿⣿⡿⠁⠜⣿⡟⢿⣥⣆⠀⢵⣧⣶⣷⠷⣽⣔⣿⣿⣿⣿⣇⠈⢰⣷⣮⠹⣽⣿⣥\n⣿⣿⣿⣿⡿⠁⠀⢈⣿⣿⣿⣿⡽⢹⡻⢿⠿⣡⣛⣿⣿⣿⣿⣿⣿⡻⠂⠬⡿⡋⠠⣙⠉⠅\n⣿⣿⣿⡿⠁⠁⠠⡊⢊⢟⢽⣽⠟⢫⠈⢘⣧⢿⣿⣞⢿⣿⠿⣿⠃⠀⢐⢐⠠⠊⠐⠡⠲⡠\n⣿⣿⣿⠁⠀⠰⠀⠀⠂⡺⠏⠑⢐⠁⠇⠘⠛⢉⣻⡿⠒⠹⠒⡖⢠⠑⡗⡠⠣⢸⡶⡀⠂⣠\n⣿⣿⠃⠀⠀⠈⠁⢶⠷⠟⣈⡕⠖⠎⠀⠂⡤⠂⣚⡕⠀⢀⡠⣰⡿⠇⠜⠝⢲⠶⣿⡧⠄⣹\n⣿⡿⠀⠀⠀⠀⡐⠀⠐⠸⡮⠉⠠⠀⠠⠞⡢⠓⠖⣠⣠⠯⠚⣉⣶⣷⣶⣿⣲⣶⣾⣾⣿⣿\n⣿⠃⠀⠀⠀⡞⡷⢸⠀⡃⠀⠀⢢⠀⠋⢂⡶⠋⡠⠉⠄⠡⠀⣻⣿⣿⣿⣿⣿⣿⣿⡿⠛⢛\n⣿⡄⠀⠀⠀⠈⠁⠠⢀⠤⠈⠀⡶⠈⠤⠛⡠⣒⣉⡭⠀⡀⢐⢀⠀⠉⠀⠀⠈⣉⡥⠂⠡⠁\n
+#	do AudioController.playTrack3()
+	You got away with it!\n(⊙ _ ⊙ )
+	- Play again => playAgain
+	- End => endScene
 if globalVariables.justiceServed == true
-	Justice is served!
-	- Play again =>< playAgain
-	- End =>< endScene
+#	do AudioController.playTrack3()
+	Justice is served!\n( ◡̀_◡́)ᕤ
+	- Play again => playAgain
+	- End => endScene
 => END
 
 ~ playAgain

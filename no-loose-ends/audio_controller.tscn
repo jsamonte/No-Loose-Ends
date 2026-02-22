@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c72703ubytf8o"]
+
+[ext_resource type="Script" uid="uid://c4olophn2rmd4" path="res://audio_controller.gd" id="1_qpnks"]
+[ext_resource type="AudioStream" uid="uid://xw7oaqrgebl7" path="res://Music/BackgroundMusic/BaseStateAudio.wav" id="2_31uvl"]
+
+[node name="AudioController" type="Node" unique_id=1438609717]
+script = ExtResource("1_qpnks")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=351571298]
+stream = ExtResource("2_31uvl")

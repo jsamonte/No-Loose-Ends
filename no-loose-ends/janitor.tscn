@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_ogu5a"]
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="7_8a0qp"]
 [ext_resource type="PackedScene" uid="uid://d4mpkyn478yv4" path="res://3DModels/Janitor.glb" id="9_llo8d"]
+[ext_resource type="PackedScene" uid="uid://b3yta3g857qry" path="res://music_manager.tscn" id="9_x7pvn"]
 
 [node name="Node3D" type="Node3D" unique_id=612837339]
 
@@ -50,11 +51,10 @@ scene_properties_keys = PackedStringArray()
 
 [node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("7_8a0qp")]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2129480650]
-autoplay = true
-
 [node name="Janitor" parent="." unique_id=756226652 instance=ExtResource("9_llo8d")]
 transform = Transform3D(-0.49998274, 0, 0.004735418, 0, 0.304, 0, -0.0041538756, 0, -0.5699803, 0, -1.2642231, -3.628144)
+
+[node name="MusicManager" parent="." unique_id=689842939 instance=ExtResource("9_x7pvn")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1611043346]
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
