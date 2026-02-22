@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="7_loynd"]
 [ext_resource type="PackedScene" uid="uid://ddjaknd6v0lri" path="res://3DModels/LabAssitant.glb" id="9_jo0as"]
 
-[node name="Node3D" type="Node3D" unique_id=1790925141]
+[node name="Node3D2" type="Node3D" unique_id=1790925141]
 
 [node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=875051348]
 
