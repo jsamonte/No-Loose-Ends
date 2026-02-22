@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dkqhfwgsxf8y5" path="res://3DModels/TitleCard.glb" id="6_4ad6s"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_465o5"]
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="7_sfgsg"]
+[ext_resource type="Script" uid="uid://dvedpdpttd72d" path="res://background_music_player.gd" id="9_7136s"]
 
 [node name="Node3D" type="Node3D" unique_id=1790925141]
 
@@ -57,9 +58,9 @@ scene_properties_keys = PackedStringArray()
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
 
 [node name="BackgroundMusicPlayer" type="Node" parent="." unique_id=1053862876]
+script = ExtResource("9_7136s")
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="BackgroundMusicPlayer" unique_id=1388074811]
-autoplay = true
 
 [node name="SoundFXPlayer" type="Node3D" parent="." unique_id=870122264]
 
