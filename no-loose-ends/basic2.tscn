@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://mwtuuvmd1rhw"]
+[gd_scene format=3 uid="uid://di5swx2e8mrme"]
 
 [ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="1_na8m4"]
 [ext_resource type="PackedScene" uid="uid://nqiyqnx42m61" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_fullglove_physics_hand.tscn" id="2_3nh41"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://cigx2gnf4tg4d" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_fullglove_physics_hand.tscn" id="4_fxvgi"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="5_j88wt"]
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="6_umtmr"]
-[ext_resource type="AudioStream" uid="uid://dhvo281bty3kx" path="res://Music/MusicForTest/Aquarium Draft 4.wav" id="7_ko2am"]
 [ext_resource type="PackedScene" uid="uid://wd3r3l2j44g2" path="res://3DModels/SecurityGuard.glb" id="8_na8m4"]
 
 [node name="Node3D" type="Node3D" unique_id=612837339]
@@ -48,7 +47,6 @@ scene_properties_keys = PackedStringArray()
 [node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("6_umtmr")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2129480650]
-stream = ExtResource("7_ko2am")
 autoplay = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1611043346]
