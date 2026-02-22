@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://di5swx2e8mrme"]
+[gd_scene format=3 uid="uid://bpfoshbtot30g"]
 
 [ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="1_svvxi"]
 [ext_resource type="PackedScene" uid="uid://nqiyqnx42m61" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_fullglove_physics_hand.tscn" id="2_o45k0"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="5_kjrcx"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_p1kn5"]
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="7_3nquc"]
-[ext_resource type="AudioStream" uid="uid://xw7oaqrgebl7" path="res://Music/BackgroundMusic/BaseStateAudio.wav" id="8_svvxi"]
 [ext_resource type="PackedScene" uid="uid://wd3r3l2j44g2" path="res://3DModels/SecurityGuard.glb" id="9_lvfvd"]
 [ext_resource type="PackedScene" uid="uid://b3yta3g857qry" path="res://music_manager.tscn" id="9_svvxi"]
 
@@ -51,10 +50,6 @@ filter = false
 scene_properties_keys = PackedStringArray()
 
 [node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("7_3nquc")]
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2129480650]
-stream = ExtResource("8_svvxi")
-autoplay = true
 
 [node name="SecurityGuard" parent="." unique_id=1645649443 instance=ExtResource("9_lvfvd")]
 transform = Transform3D(-0.5, 0, -1.0313014e-07, 0, 0.456, 0, 7.54979e-08, 0, -0.683, 0, -2.5, -3.654)
