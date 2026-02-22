@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="5_m6d08"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_8l5m8"]
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="7_loynd"]
-[ext_resource type="AudioStream" uid="uid://dhvo281bty3kx" path="res://Music/MusicForTest/Aquarium Draft 4.wav" id="8_at5fc"]
 [ext_resource type="PackedScene" uid="uid://ddjaknd6v0lri" path="res://3DModels/LabAssitant.glb" id="9_jo0as"]
 
 [node name="Node3D" type="Node3D" unique_id=1790925141]
@@ -52,11 +51,10 @@ scene_properties_keys = PackedStringArray()
 [node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("7_loynd")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1388074811]
-stream = ExtResource("8_at5fc")
 autoplay = true
 
 [node name="LabAssitant" parent="." unique_id=771511862 instance=ExtResource("9_jo0as")]
-transform = Transform3D(-0.4, 0, -6.039832e-08, 0, 0.4, 0, 6.039832e-08, 0, -0.4, 0, -2.5, -3.654)
+transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, -2.5, -3.654)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1176344002]
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
