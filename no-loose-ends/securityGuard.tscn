@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://di5swx2e8mrme"]
+[gd_scene format=3 uid="uid://bpfoshbtot30g"]
 
 [ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="1_svvxi"]
 [ext_resource type="PackedScene" uid="uid://nqiyqnx42m61" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_fullglove_physics_hand.tscn" id="2_o45k0"]
@@ -42,7 +42,7 @@ hand_material_override = ExtResource("3_sc7xs")
 enable_passthrough = true
 
 [node name="Viewport2Din3D" parent="." unique_id=1648833397 instance=ExtResource("6_p1kn5")]
-transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, -0.25, -1.311)
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, 0.25, -1.311)
 scene = ExtResource("7_3nquc")
 viewport_size = Vector2(810, 450)
 transparent = 1
