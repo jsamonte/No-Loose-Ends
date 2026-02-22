@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dkqhfwgsxf8y5" path="res://3DModels/TitleCard.glb" id="6_4ad6s"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_465o5"]
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="7_sfgsg"]
-[ext_resource type="Script" uid="uid://dvedpdpttd72d" path="res://background_music_player.gd" id="9_7136s"]
+[ext_resource type="Script" path="res://background_music_player.gd" id="9_7136s"]
 
 [node name="Node3D" type="Node3D" unique_id=1790925141]
 
