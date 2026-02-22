@@ -42,7 +42,7 @@ hand_material_override = ExtResource("3_pmj6v")
 enable_passthrough = true
 
 [node name="Viewport2Din3D" parent="." unique_id=1648833397 instance=ExtResource("6_jha4c")]
-transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, 0.25, -1.311)
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, 1, -1.311)
 scene = ExtResource("7_ctpxa")
 viewport_size = Vector2(1300, 1000)
 transparent = 1
@@ -52,7 +52,7 @@ scene_properties_keys = PackedStringArray()
 [node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("7_ctpxa")]
 
 [node name="Homeless" parent="." unique_id=2084864954 instance=ExtResource("9_i841q")]
-transform = Transform3D(-0.8895603, 0, 0.009298712, 0, 0.56327766, 0, -0.013632713, 0, -0.6067586, -0.0047525167, -2.019217, -4.6921906)
+transform = Transform3D(-0.66992134, 0, 0.010266697, 0, 0.57, 0, -0.010266697, 0, -0.66992134, 0, -2.5330386, -3.654)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1611043346]
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)

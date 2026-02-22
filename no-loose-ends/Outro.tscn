@@ -42,7 +42,7 @@ hand_material_override = ExtResource("3_5h2w8")
 enable_passthrough = true
 
 [node name="Viewport2Din3D" parent="." unique_id=718221118 instance=ExtResource("6_lxv20")]
-transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, 0.25, -1.311)
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, 1, -1.311)
 scene = ExtResource("7_pv4bq")
 viewport_size = Vector2(1300, 1000)
 transparent = 1
@@ -59,4 +59,4 @@ autoplay = true
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
 
 [node name="Police" parent="." unique_id=1611265801 instance=ExtResource("9_g37r7")]
-transform = Transform3D(-0.72390527, 0, -8.910062e-08, 0, 0.53439933, 0, 6.328581e-08, 0, -1.0191922, 0, -2.5330386, -3.654)
+transform = Transform3D(-0.8, 0, -1.0116719e-07, 0, 0.67, 0, 1.2079664e-07, 0, -0.67, 0, -2.5330386, -3.654)

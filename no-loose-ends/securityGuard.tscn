@@ -42,7 +42,7 @@ hand_material_override = ExtResource("3_sc7xs")
 enable_passthrough = true
 
 [node name="Viewport2Din3D" parent="." unique_id=1648833397 instance=ExtResource("6_p1kn5")]
-transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, 0.25, -1.311)
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, 1, -1.311)
 scene = ExtResource("7_3nquc")
 viewport_size = Vector2(1300, 1000)
 transparent = 1
@@ -56,7 +56,7 @@ stream = ExtResource("9_svvxi")
 autoplay = true
 
 [node name="SecurityGuard" parent="." unique_id=1645649443 instance=ExtResource("9_lvfvd")]
-transform = Transform3D(-0.72390527, 0, -1.5389375e-07, 0, 0.53439933, 0, 1.0930666e-07, 0, -1.0191922, 0, -2.5330386, -3.654)
+transform = Transform3D(-0.67, 0, -1.0116719e-07, 0, 0.7, 0, 1.0116719e-07, 0, -0.67, 0, -2.5330386, -3.654)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1611043346]
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
