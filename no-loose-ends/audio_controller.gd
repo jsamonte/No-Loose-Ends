@@ -1,7 +1,7 @@
 extends Node
 
 const BGM_BUS_NAME = "BGM"
-const SFX_BUS_NAME = "SFX"
+const SFX_BUS_NAME = "SFX"  
 
 #@onready var bgm_bus_index = AudioServer.get_bus_index(BGM_BUS_NAME)
 #@onready var sfx_bus_index = AudioServer.get_bus_index(SFX_BUS_NAME)
