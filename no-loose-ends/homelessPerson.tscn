@@ -7,9 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="5_u1kbg"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_jha4c"]
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="7_ctpxa"]
+[ext_resource type="AudioStream" uid="uid://xw7oaqrgebl7" path="res://Music/BackgroundMusic/BaseStateAudio.wav" id="9_8d4bw"]
 [ext_resource type="PackedScene" uid="uid://leg2g6h1uo1h" path="res://3DModels/Homeless.glb" id="9_i841q"]
 
-[node name="Node3D" type="Node3D" unique_id=612837339]
+[node name="Node3D2" type="Node3D" unique_id=612837339]
 
 [node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=558999166]
 
@@ -55,3 +56,7 @@ transform = Transform3D(-0.8895603, 0, 0.009298712, 0, 0.56327766, 0, -0.0136327
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1611043346]
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=649278536]
+stream = ExtResource("9_8d4bw")
+autoplay = true
