@@ -99,11 +99,11 @@ do load_outro_scene()
 
 ~ result
 if globalVariables.gotAwayWithIt == true
-	You got away with it!\n(⊙ _ ⊙ )
+	You got away with it!\n(0_0)
 	- Play again =>< playAgain
 	- End =>< endScene
 if globalVariables.justiceServed == true
-	Justice is served!\n( ◡̀_◡́)ᕤ
+	Justice is served!\n(^O^)
 	- Play again =>< playAgain
 	- End =>< endScene
 => END

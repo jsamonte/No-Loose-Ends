@@ -51,10 +51,6 @@ scene_properties_keys = PackedStringArray()
 
 [node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("7_3nquc")]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Viewport2Din3D" unique_id=1548798485]
-stream = ExtResource("9_svvxi")
-autoplay = true
-
 [node name="SecurityGuard" parent="." unique_id=1645649443 instance=ExtResource("9_lvfvd")]
 transform = Transform3D(-0.516, 0, -7.791383e-08, 0, 0.54, 0, 7.791383e-08, 0, -0.516, 0, -2.5330386, -3.654)
 
