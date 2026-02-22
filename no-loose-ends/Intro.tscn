@@ -41,10 +41,10 @@ hand_material_override = ExtResource("3_7136s")
 enable_passthrough = true
 
 [node name="TitleCard" parent="." unique_id=1806943997 instance=ExtResource("6_4ad6s")]
-transform = Transform3D(-0.012700362, 0, -1.0520004, 0, 0.8772898, 0, 0.8560253, 0, -0.015607938, -2.7132006, -2.6249144, -5.2888813)
+transform = Transform3D(-0.012700362, 0, -1.0520004, 0, 0.8772898, 0, 0.8560253, 0, -0.015607938, -2.7132006, -1.46118, -4.568338)
 
 [node name="Viewport2Din3D" parent="." unique_id=718221118 instance=ExtResource("6_465o5")]
-transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.03779316, 0.05767882, -1.949627)
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.19063103, 1.4752839, -1.949627)
 scene = ExtResource("7_sfgsg")
 viewport_size = Vector2(810, 450)
 transparent = 1
