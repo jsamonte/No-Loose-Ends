@@ -12,7 +12,7 @@ var bgmList = {"BaseBGM": BGM_BASE,"IntroBGM":BGM_INTRO,
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	#$BackgroundMusic = BGM_INTRO
+	$BackgroundMusic.stream = BGM_INTRO
 	$BackgroundMusic.play()
 	
 
