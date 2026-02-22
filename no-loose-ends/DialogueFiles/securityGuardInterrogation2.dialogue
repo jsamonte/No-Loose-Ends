@@ -12,16 +12,18 @@ if globalVariables.assasinationTool == "Lab equipment":
 				set globalVariables.wins = globalVariables.wins + 1
 		- Get shoe size of guard
 			Shoe size does not match, and upon further investigation it is discovered that you have the same shoe size and have shoes that MATCH the crime scene. You are immediately thrown to the slammer.
-			set globalVariables.justiceServed = true
-			set globalVariables.gotAwayWithIt = false
+			Justice is served
+			- Play again?
+			- End?
 	- Are you aware of how the particle accelerator was sabotaged?
 		Honestly, I am not too sure, but if you look at the security footage I am not there at all.
 		- We believe you sabotaged the particle accelerator. There are footprints in the lab that do not belong to the Doctor. Do you have anything to say about that?
 			Well, yeah. Everyone wears shoes including me.
 			- Get shoe size of guard
 				Shoe size does not match, and upon further investigation it is discovered that you have the same shoe size and have shoes that MATCH the crime scene. You are immediately thrown to the slammer.
-				set globalVariables.justiceServed = true
-				set globalVariables.gotAwayWithIt = false
+				Justice is served
+				- Play again?
+				- End?
 		- Get security footage
 			You get to the security footage first and replace it with an AI-generated footage that shows the Security Guard sabotaging the accelerator. He is quickly detained. 
 			set globalVariables.justiceServed = false
@@ -29,8 +31,9 @@ if globalVariables.assasinationTool == "Lab equipment":
 			set globalVariables.wins = globalVariables.wins + 1
 elif globalVariables.assasinationTool == "Gun shot":
 	Further investigation shows that his gun never fired. So you are investigated and then arrested.
-	set globalVariables.justiceServed = true
-	set globalVariables.gotAwayWithIt = false
+	Justice is served
+	- Play again?
+	- End?
 elif globalVariables.assasinationTool == "Stab wounds":
 	The Security Guard was the only one with the bladed weapon. And lucky for you, his knife just happens to match the wounds of the Doctor.
 	set globalVariables.justiceServed = false
@@ -44,8 +47,9 @@ elif globalVariables.assasinationTool == "Poison":
 			I am not a scientist. I would not know how to even produce such a gas.
 			- Search warrant
 				Although it seems like his place is unusually clean, there is no evidence. Blaming a well suspected guard was suspicious enough for you to be a suspect and you are eventually sent to prison after being investigated. 
-				set globalVariables.justiceServed = true
-				set globalVariables.gotAwayWithIt = false
+				Justice is served
+				- Play again?
+				- End?
 		- Get purchase history from bank
 			All records seem fine until a purchase of World War I mustard gas is found. It is obvious he is a WWI history fanatic, but the evidence is damming and he is arrested. 
 			set globalVariables.justiceServed = false
@@ -62,6 +66,7 @@ elif globalVariables.assasinationTool == "Poison":
 				set globalVariables.wins = globalVariables.wins + 1
 		- Search warrant
 			Although it seems like his place is unusually clean, there is no evidence. Blaming a well suspected guard was suspicious enough for you to be a suspect and you are eventually sent to prison after being investigated. 
-			set globalVariables.justiceServed = true
-			set globalVariables.gotAwayWithIt = false
+			Justice is served
+			- Play again?
+			- End?
 => END

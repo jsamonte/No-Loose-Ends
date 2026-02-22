@@ -25,7 +25,6 @@ DialogueManager="*uid://c3rodes2l3gxb"
 XRToolsUserSettings="*uid://bqgb8i74tm0t"
 XRToolsRumbleManager="*uid://by853dk86g1qw"
 globalVariables="*uid://bi537w8voh4ew"
-AudioController="*uid://c72703ubytf8o"
 
 [dialogue_manager]
 
