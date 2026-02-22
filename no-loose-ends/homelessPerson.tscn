@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="5_u1kbg"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_jha4c"]
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="7_ctpxa"]
-[ext_resource type="AudioStream" uid="uid://dhvo281bty3kx" path="res://Music/MusicForTest/Aquarium Draft 4.wav" id="8_nw1k8"]
 [ext_resource type="PackedScene" uid="uid://leg2g6h1uo1h" path="res://3DModels/Homeless.glb" id="9_i841q"]
 
 [node name="Node3D" type="Node3D" unique_id=612837339]
@@ -42,7 +41,7 @@ hand_material_override = ExtResource("3_pmj6v")
 enable_passthrough = true
 
 [node name="Viewport2Din3D" parent="." unique_id=1648833397 instance=ExtResource("6_jha4c")]
-transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, -0.25, -1.311)
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.161, 0.25, -1.311)
 scene = ExtResource("7_ctpxa")
 viewport_size = Vector2(810, 450)
 transparent = 1
@@ -52,11 +51,10 @@ scene_properties_keys = PackedStringArray()
 [node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("7_ctpxa")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2129480650]
-stream = ExtResource("8_nw1k8")
 autoplay = true
 
 [node name="Homeless" parent="." unique_id=2084864954 instance=ExtResource("9_i841q")]
-transform = Transform3D(-0.41610906, 0, 0.007079307, 0, 0.31767222, 0, -0.006376939, 0, -0.46193966, -0.0047525167, -2.019217, -4.6921906)
+transform = Transform3D(-0.4999413, 0, 0.0085045025, 0, 0.382, 0, -0.007661714, 0, -0.55493486, -0.0047525167, -2.019217, -4.6921906)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1611043346]
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
