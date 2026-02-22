@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://dkqhfwgsxf8y5" path="res://3DModels/TitleCard.glb" id="6_4ad6s"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_465o5"]
 [ext_resource type="PackedScene" uid="uid://shbobkyreym7" path="res://basictextbubble.tscn" id="7_sfgsg"]
-[ext_resource type="AudioStream" uid="uid://dhvo281bty3kx" path="res://Music/MusicForTest/Aquarium Draft 4.wav" id="8_f4n53"]
 
 [node name="Node3D" type="Node3D" unique_id=1790925141]
 
@@ -54,9 +53,14 @@ scene_properties_keys = PackedStringArray()
 
 [node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("7_sfgsg")]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1388074811]
-stream = ExtResource("8_f4n53")
-autoplay = true
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1176344002]
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
+
+[node name="BackgroundMusicPlayer" type="Node" parent="." unique_id=1053862876]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="BackgroundMusicPlayer" unique_id=1388074811]
+autoplay = true
+
+[node name="SoundFXPlayer" type="Node3D" parent="." unique_id=870122264]
+
+[node name="SoundFX" type="AudioStreamPlayer3D" parent="SoundFXPlayer" unique_id=1136797055]
