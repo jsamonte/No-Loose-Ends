@@ -52,7 +52,7 @@ scene_properties_keys = PackedStringArray()
 [node name="Node2D" parent="Viewport2Din3D" unique_id=1605353438 instance=ExtResource("7_ctpxa")]
 
 [node name="Homeless" parent="." unique_id=2084864954 instance=ExtResource("9_i841q")]
-transform = Transform3D(-0.66992134, 0, 0.010266697, 0, 0.57, 0, -0.010266697, 0, -0.66992134, 0, -2.5330386, -3.654)
+transform = Transform3D(-0.4999413, 0, 0.008734354, 0, 0.485, 0, -0.007661714, 0, -0.56993306, 0, -2.5330386, -3.654)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1611043346]
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)

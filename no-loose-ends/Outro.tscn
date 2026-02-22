@@ -59,4 +59,4 @@ autoplay = true
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
 
 [node name="Police" parent="." unique_id=1611265801 instance=ExtResource("9_g37r7")]
-transform = Transform3D(-0.8, 0, -1.0116719e-07, 0, 0.67, 0, 1.2079664e-07, 0, -0.67, 0, -2.5330386, -3.654)
+transform = Transform3D(-0.51, 0, -8.606761e-08, 0, 0.57, 0, 7.7007854e-08, 0, -0.57, 0, -2.5330386, -3.654)

@@ -56,7 +56,7 @@ stream = ExtResource("9_svvxi")
 autoplay = true
 
 [node name="SecurityGuard" parent="." unique_id=1645649443 instance=ExtResource("9_lvfvd")]
-transform = Transform3D(-0.67, 0, -1.0116719e-07, 0, 0.7, 0, 1.0116719e-07, 0, -0.67, 0, -2.5330386, -3.654)
+transform = Transform3D(-0.516, 0, -7.791383e-08, 0, 0.54, 0, 7.791383e-08, 0, -0.516, 0, -2.5330386, -3.654)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1611043346]
 transform = Transform3D(1, 0, 0, 0, 0.48606083, 0.873925, 0, -0.873925, 0.48606083, 0, 4, -1.5808384)
